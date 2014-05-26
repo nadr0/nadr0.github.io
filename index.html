@@ -4,6 +4,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400' rel='stylesheet' type='text/css'>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<script src="javascript.js"></script>
+		<script src="json.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="jquery.backstretch.min.js"></script>
 		<title></title>
@@ -19,8 +20,8 @@
 
 			<div id="leftlistiems">
 				<ul>
-					<li onclick="LoadiFrame('http://www.whaleblubber.net/Kevin/html/snow/SnowFall.html','https://github.com/Levo/DisplayMyExamples/tree/master/SnowFall', snowinfo)">Weather ~ Snow </li>
-					<li onclick="LoadiFrame('http://www.whaleblubber.net/Kevin/html/leaf/LeafFall.html','https://github.com/Levo/DisplayMyExamples/tree/master/LeafFall', null)">Weather ~ Leaf </li>
+					<li onclick="LoadiFrame(JSONObject.snow.src, JSONObject.snow.code, JSONObject.snow.info)">Weather ~ Snow </li>
+					<li onclick="LoadiFrame(JSONObject.leaf.src, JSONObject.leaf.code, null)">Weather ~ Leaf </li>
 					<li onclick="LoadiFrame('http://www.whaleblubber.net/Kevin/html/rain/RainFall.html','https://github.com/Levo/DisplayMyExamples/tree/master/RainFall', null)">Weather ~ Rain </li>
 					<li onclick="LoadiFrame('http://www.whaleblubber.net/Kevin/html/paulbunyan/','https://github.com/Levo/Pixi-Js/tree/master/Paul', null)">Paul Bunyan </li>
 					<li onclick="LoadiFrame('http://www.whaleblubber.net/Kevin/html/coloredsquares/ColorSquare.html','https://github.com/Levo/ColoringSquares', null)">Colored Squares </li> 	
