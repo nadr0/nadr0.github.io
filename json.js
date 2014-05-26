@@ -6,6 +6,37 @@ var JSONObject = {
 	},
 	"leaf":{
 		"src":"http://www.whaleblubber.net/Kevin/html/leaf/LeafFall.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/LeafFall" 
+		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/LeafFall",
+		"info":""
+	},
+	"rain":{
+		"src":"",
+		"code":"",
+		"info":"",
+	},
+	"paulbunyan":{
+		"src":"",
+		"code":"",
+		"info":"",
+	},
+	"coloredsquares":{
+		"src":"",
+		"code":"",
+		"info":"",
+	},
+	"bleuetrouge":{
+		"src":"",
+		"code":"",
+		"info":"",
+	},
+	"bullethell":{
+		"src":"",
+		"code":"",
+		"info":"",
+	},
+	"rundodge":{
+		"src":"",
+		"code":"",
+		"info":"",
 	}
 };
