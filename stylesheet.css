@@ -82,6 +82,8 @@ ul {
 	background-color: white;
 	width: 50%;
 	height: auto;
+	font-size: 100%;
+	text-align: center;	
 }
 .info {
 	color: white;
