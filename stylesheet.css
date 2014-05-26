@@ -59,7 +59,7 @@ ul {
 	color: gray;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
-	font-size: 100%;
+	font-size: 90%;
 	visibility: hidden;
 	cursor: pointer;
 }
@@ -68,7 +68,7 @@ ul {
 	color: gray;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
-	font-size: 120%;
+	font-size: 125%;
 	cursor: pointer;
 }
 #sourcecodelink:visited {
