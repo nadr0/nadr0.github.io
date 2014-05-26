@@ -1,6 +1,3 @@
-var bleuetrougeinfo = "Bleu et Rouge is a game I made for Clay.io's Got Game? Competition // 2014. It was one month of development and two weeks of judging. I placed 4th and won a Nexus 7."
-var snowinfo = 'Snow is one part of a weather collection I am creating.  My goal is to create different weather types in using javascript to give that "feeling" when its snowing out.';
-
 function mouseoverexamples(event){
   var li = document.getElementsByTagName('li');
   for (var i = 0; i < li.length; i++) {
