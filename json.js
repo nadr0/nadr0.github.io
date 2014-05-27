@@ -15,7 +15,7 @@ var JSONObject = {
 		"src":"http://www.whaleblubber.net/Kevin/html/rain/RainFall.html",
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/RainFall",
 		"info":"Rain is a part of a weather collection I am making. I want to rework this one. It is hard to see.",
-		"input":"Move: A & D; 	 Jump: Space;",
+		"input":"Move: A & D; 	 Jump:asf Space;",
 	},
 	"paulbunyan":{
 		"src":"http://www.whaleblubber.net/Kevin/html/paulbunyan/",
