@@ -47,4 +47,4 @@ var JSONObject = {
 		"info":"My first game with WebGL/Threejs that is unfinished.",
 		"input":"Move: A & D;	  Jump: Space;",
 	}
-};
+};lets break everything
