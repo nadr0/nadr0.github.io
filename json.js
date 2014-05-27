@@ -39,12 +39,12 @@ var JSONObject = {
 		"src":"http://www.whaleblubber.net/Kevin/html/bullethell/BulletHell.html",
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/BulletHell",
 		"info":"My first unfinished game.",
-		"input":"",
+		"input":"Move: Mouse;	  Fire: W;",
 	},
 	"rundodge":{
 		"src":"http://www.whaleblubber.net/Kevin/html/rundodge/SpeedRun.html",
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/Threejs",
 		"info":"My first game with WebGL/Threejs that is unfinished.",
-		"input":"",
+		"input":"Move: A & D;	  Jump: Space;",
 	}
 };
