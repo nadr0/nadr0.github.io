@@ -16,17 +16,24 @@ function mouseoverexamples(event){
   };
 }
 
-function LoadiFrame(link,source,info){
+function LoadiFrame(link,source,info,controls){
   var frame = document.getElementById("frame");
   var sourcecode = document.getElementById("sourcecodelink");
   var clearbutton = document.getElementById("clear");
   var sourcebutton = document.getElementById("sourcecode");
   var exampleinfo = document.getElementById("exampleinfo");
+  var examplecontrols = document.getElementById("examplecontrols");
 
   if(exampleinfo.innerHTML === undefined){
     exampleinfo.innerHTML = "";
   }else{
     exampleinfo.innerHTML = info;
+  }
+
+  if(examplecontrols.innerHTML === undefined){
+    examplecontrols.innerHTML = "";
+  }else{
+    examplecontrols.innerHTML = controls;
   }
 
   clearbutton.style.visibility = "visible";
@@ -46,8 +53,11 @@ function cleariframe(element){
   var frame = document.getElementById("frame");
   var sourcebutton = document.getElementById("sourcecode");
   var exampleinfo = document.getElementById("exampleinfo");
+  var examplecontrols = document.getElementById("examplecontrols");
 
   exampleinfo.innerHTML = "";
+  examplecontrols.innerHTML = "";
+
   frame.removeAttribute("src");
   element.style.visibility = "hidden";
   sourcebutton.style.visibility = "hidden";

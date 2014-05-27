@@ -74,7 +74,17 @@ ul {
 #sourcecodelink:visited {
 	background-color: gray;
 }
-#exampleinfo{
+#examplecontrols {
+	margin-left: 10%;
+	font-family: 'Source Code Pro';
+	font-weight: 200;
+	color: white;
+	width: 50%;
+	height: auto;
+	font-size: 100%;
+	text-align: left;
+}
+#exampleinfo {
 	margin-left: 10%;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
