@@ -78,12 +78,11 @@ ul {
 	margin-left: 10%;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
-	color: gray;
-	background-color: white;
+	color: white;
 	width: 50%;
 	height: auto;
 	font-size: 100%;
-	text-align: center;	
+	text-align: left;	
 }
 .info {
 	color: white;
