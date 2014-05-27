@@ -39,7 +39,7 @@ var JSONObject = {
 		"src":"http://www.whaleblubber.net/Kevin/html/bullethell/BulletHell.html",
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/BulletHell",
 		"info":"My first unfinished game.",
-		"input":"Move: Mouse;	sd  Fire: W;",
+		"input":"Move: Mouse;	  Fire: W;",
 	},
 	"rundodge":{
 		"src":"http://www.whaleblubber.net/Kevin/html/rundodge/SpeedRun.html",
