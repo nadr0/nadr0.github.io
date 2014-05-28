@@ -15,7 +15,7 @@ function mouseoverexamples(event){
     },false);
   };
 }
-
+// Is the windows application still broken?
 function LoadiFrame(link,source,info,controls){
   var frame = document.getElementById("frame");
   var sourcecode = document.getElementById("sourcecodelink");
