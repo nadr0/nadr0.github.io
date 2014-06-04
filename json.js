@@ -35,16 +35,10 @@ var JSONObject = {
 		"info":"I created this game for Clay.io's Got Game? competition // 2014. It was one month of development and a two week judging process. I placed 4th and won a Nexus 7.",
 		"input":"",
 	},
-	"bullethell":{
-		"src":"http://www.whaleblubber.net/Kevin/html/bullethell/BulletHell.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/BulletHell",
-		"info":"My first unfinished game.",
-		"input":"Move: Mouse;	  Fire: W;",
-	},
-	"rundodge":{
-		"src":"http://www.whaleblubber.net/Kevin/html/rundodge/SpeedRun.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/Threejs",
-		"info":"My first game with WebGL/Threejs that is unfinished.",
-		"input":"Move: A & D;	  Jump: Space;",
+	"dungeon":{
+		"src":"http://www.whaleblubber.net/Kevin/html/totych",
+		"code":"",
+		"info":"I am currently working on a new game. I am using javascript and impactjs. This demos the random dungeon level generator I created.",
+		"input":"Move: W & A & S & D",
 	}
 };
