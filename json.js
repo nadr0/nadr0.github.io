@@ -10,7 +10,7 @@ var JSONObject = {
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/LeafFall",
 		"info":"Leaf is a part of a weather collection I am making. It is my take on how leaves fall. ",
 		"input":"",
-	},
+	}, 
 	"rain":{
 		"src":"http://www.whaleblubber.net/Kevin/html/rain/RainFall.html",
 		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/RainFall",
@@ -40,5 +40,5 @@ var JSONObject = {
 		"code":"",
 		"info":"I am currently working on a new game. I am using javascript and impactjs. This demos the random dungeon level generator I created.",
 		"input":"Move: W & A & S & D",
-	}
+	},
 };
