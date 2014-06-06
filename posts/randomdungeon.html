@@ -1,9 +1,17 @@
 <html>
 <head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
     <style type="text/css">
     h1{
     	margin-left: 25%;
+        font-weight: 300;
   		color: black;
+    }
+    body{
+        background-color: rgba(255,255,255,0.35);
+        font-family: 'Source Code Pro';
+        font-weight: 200;
+        font-size: 18px;
     }
     </style>
 </head>
@@ -11,7 +19,83 @@
 
 	<h1>Random Dungeon Generator</h1>
 	<p>
-		I want to focus on three words for my next game; endless, fast-paced, random.  
+		I want to focus on three words for my next game; endless, fast-paced, random.<br>
+        Here is a sample level. Walls are black, floor is blue <br><br>
+        <img src="http://www.whaleblubber.net/Kevin/html/dungeon/sampledungeon.png" height="490" width="978"><br><br>
+
+        <h1>Breaking it down</h1>
+
+        There are a few variables you can tweak to create different style maps.<br>
+        In this example shown above:<br> <BLOCKQUOTE> 25 rooms<br> minimum room height is 2<br> maximum room height is 5<br>
+        Also the tiles are 16x16 which is 1/8 of what the actual game is going to be.<br></BLOCKQUOTE>
+
+        <h1> What is a room? </h1>     
+
+        A room consists of 4 quadrants and 2 lines. <br><br>
+        <img src="http://www.whaleblubber.net/Kevin/html/dungeon/oneroomnowallsoutlined.png"> <img src="http://www.whaleblubber.net/Kevin/html/dungeon/oneroomnowallscount.png"> <img src="http://www.whaleblubber.net/Kevin/html/dungeon/oneroomnowallscount2.png"> <img src="http://www.whaleblubber.net/Kevin/html/dungeon/oneroomnowallscount3.png"><br><br>
+        The yellow outlines the 4 quadrants and the orange outlines the two lines.<br>
+        The min/max room heights coorespond to the min/max length of a quadrant or a line.<br>
+        In the example room above it has a minimum room height of 3 and a maximum room height of 5.<br>
+        You count from the middle tile and go to the edge to calculate those heights.<br>
+        There are 3 example pictures on how the counting works. You can see the dimension of the first quadrant(I) - 3x3<br>
+        Also the dimension of the horizontal line - 1x5.
+
+        <h1>Random room</h1>
+
+        <img src="http://www.whaleblubber.net/Kevin/html/dungeon/oneroom.png"><br><br>
+        So each quadrant and line now has random lengths based off the min,max room heights.<br>
+        The room above has dimensions: <br>
+        <BLOCKQUOTE>
+        Quad I : 4x4<br>
+        Quad II: 5x5<br>
+        Quad III: 4x4<br>
+        Quad IV: 3x3<br>
+        Vertical Line: 1x4<br>
+        Horizontal Line: 1x2<br>
+        </BLOCKQUOTE>
+
+        <h1>Hallways</h1>
+
+        <img src="http://whaleblubber.net/Kevin/html/dungeon/onehallway.png"><br><br>
+        A hallway is created by picking one center tile and then drawing to every other center tile.<br>
+        I pick a random room, then take that center tile and then draws hallways to each other room's center tile.<br>
+        You can see that "center tile" of a room in the picture above. It is the green tile. Notice the L shaped path starting from the left center tile to the right center tile<br>
+
+        <h1>Walls</h1>
+
+        Once the rooms are drawn and connected the walls are created which are the black tiles. All I do is check the adjacent tiles and if there is no adjacent tile I draw a wall. <br>
+
+        <h1>Impactjs</h1>
+
+        <img src="http://whaleblubber.net/Kevin/html/dungeon/impactjsfirstexample.png" height="490" width="978"><br><br>
+        After finishing the basis of my dungeon generator I started to implement it into Impactjs and get a working prototype.<br>
+        The white tiles are the floor tiles and the square tiles with a X are the wall tiles.<br>
+        I did run into some errors when implementing it in Impactjs which made me refactor a lot of my code. This was a good thing because it allowed me to clean up my code even more and get a better understanding of what it does.<br>
+
+        <h1>What Impactjs wants</h1>
+        If you look at previous pictures you will notice the numbers 1, 2, 3 placed inside the tiles.<br>
+        Those numbers correspond to the frame index on a spritesheet to give it the correct image.<br>
+        Impactjs creates a background layer and creates a "data" array which has the dimension of the background. The array is 40x80.<br>
+        Every slot in the array gets assigned a 1, 2, or 3.<br>
+        A wall is a 2, a South Wall is a 3, and a floor tile is a 1. <br>
+        A South Wall is the wall that you can see because of the perspective.<br>
+        You can see this at work in the dungeon example under the <b>In Progress</b> tab or looking at the example picture above.<br>
+        In the example picture the square with an X is the wall image in the spritesheet and the floor is a white tile.<br>
+        I do no have the south wall in this example picture, if you look at the example dungeon under the <b>In Progress</b>, the gray dark walls are those "south walls".<br>
+
+        <h1>Bringing it all together</h1>
+        Now looking at the very first picture, that example has 25 rooms. Some of those rooms overlap each other. This allows for random designs and room dimensions. <br>
+        One room is not enough, you can spawn x amount of rooms with random dimensions for the quadrants and lines. So each room has random dimensions and those rooms overlap.<br> This creates a variety of different possibilities when it comes to creating levels.<br>
+
+        <h1>Quick Recap</h1> 
+        1. X amount of rooms get drawn at random locations<br>
+        2. 4 Quads, 2 lines in a room, both with random dimensions<br>
+        3. Hallways connect rooms together. Starting with one center tile of then going to each other center tile<br>
+        4. Every blank adjacent tile to a floor tile gets turned into a wall<br>
+        5. Convert tiles to an array map that Impactjs can read<br>
+        6. Texture the map based off the array data<br>
+        7. Stacking of rooms along with the random dimensions of rooms allow for truly random levels<br>
+
 	</p>
 
 

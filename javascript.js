@@ -18,7 +18,7 @@ function mouseoverexamples(event){
 // Is the windows application still broken?
 function LoadiFrame(link,source,info,controls, buttonson){
   var buttonshow = buttonson;
-  console.log(buttonshow);
+  
   if(buttonshow === undefined){
     buttonshow = true;
   }
