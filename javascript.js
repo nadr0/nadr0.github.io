@@ -16,12 +16,8 @@ function mouseoverexamples(event){
   };
 }
 // Is the windows application still broken?
-function LoadiFrame(link,source,info,controls, buttonson){
-  var buttonshow = buttonson;
+function LoadiFrame(link,source,info,controls){
   
-  if(buttonshow === undefined){
-    buttonshow = true;
-  }
   var frame = document.getElementById("frame");
   var sourcecode = document.getElementById("sourcecodelink");
   var clearbutton = document.getElementById("clear");
@@ -41,10 +37,8 @@ function LoadiFrame(link,source,info,controls, buttonson){
     examplecontrols.innerHTML = controls;
   }
 
-  if(buttonshow){
-    clearbutton.style.visibility = "visible";
-    sourcebutton.style.visibility = "visible";
-  }
+  clearbutton.style.visibility = "visible";
+  sourcebutton.style.visibility = "visible";
 
   frame.src = link;
   frame.focus();
