@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    h1{
+        text-align: center;
+        font-weight: 300;
+        color: black;
+    }
+    body{
+        background-color: rgba(255,255,255,0.35);
+        font-family: 'Source Code Pro';
+        font-weight: 200;
+        font-size: 18px;
+    }
+    #mini{
+        font-size: 24px;
+    }
+    #date{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Types of Dungeons</h1>
+    <h2 id="date">June X, 2014</h2>
+
+    <p>
+        This post is going to expand on the previous post I wrote that explained how the dungeon generator works. I am going to show you the different types of levels that I can create. <br><br>
+       
+        <h1> Variables </h1>
+        <BLOCKQUOTE>
+            <b> n </b> = amount of rooms <br>
+            <b> minRH </b> = minimum room height <br>
+            <b> maxRH </b> = maximum room height <br>
+        </BLOCKQUOTE> <br>
+
+        <h1> Understanding the map </h1> 
+
+        <BLOCKQUOTE>
+
+            <h3 id="mini">Tiles</h3>
+
+            <BLOCKQUOTE>
+                <b> Blue </b> = Floor <br>
+                <b> Black </b> = Walls <br>
+                <b> Green </b> = Enemies <br>
+                <b> Red </b> = Items <br>
+            </BLOCKQUOTE>
+
+            <h3 id="mini">Numbers</h3>
+
+            <BLOCKQUOTE>
+                <b> 1 </b> = Floor <br>
+                <b> 2 </b> = Wall <br>
+                <b> 3 </b> = South Wall (The wall you see)<br>
+            </BLOCKQUOTE>
+            
+            These numbers correspond to the data array that Impactjs reads. If 1 is assigned to [i][j] in the data array it will draw the floor texture at that location. If 2 is assignted to [i][j] it will draw the wall texture. Impactjs reads these numbers then a tilesheet is assigned to the array and those numbers point to the frame index on the tilesheet.
+        </BLOCKQUOTE>
+
+    </p>
+
+
+</body>
+</html>
