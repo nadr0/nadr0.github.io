@@ -5,6 +5,6 @@ var JSONObject2 = {
 	},
 	"dungeontypes":{
 		"src":"posts/dungeontypes.html",
-		"code":"",
+		"code":"https://github.com/Levo/levo.github.io/blob/master/posts/dungeontypes.html",
 	}
 };
