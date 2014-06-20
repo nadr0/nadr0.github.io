@@ -72,7 +72,11 @@ function cleariframe(element){
 function resetsidebar(){
   var leftlist = document.getElementById("leftlist");
   var iframe = document.getElementById("iframe");
-  var returnbutton = document.getElementById("return")
+  var returnbutton = document.getElementById("return");
+  var returnleftlist = document.getElementById("returnleftlist");
+
+  returnleftlist.style.width = "0%";
+  returnleftlist.style.height = "0%";
 
   returnbutton.style.visibility = "hidden";
 
@@ -85,9 +89,13 @@ function hidesidebar(){
   var leftlist = document.getElementById("leftlist");
   var iframe = document.getElementById("iframe");
   var returnbutton = document.getElementById("return");
+  var returnleftlist = document.getElementById("returnleftlist");
+
+  returnleftlist.style.width ="10%";
+  returnleftlist.style.height = "100%";
 
   returnbutton.style.visibility = "visible";
 
-  iframe.style.marginLeft = "15%";
+  iframe.style.marginLeft = "10%";
   leftlist.style.marginLeft = "-25%";
 };
