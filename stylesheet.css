@@ -47,6 +47,38 @@ ul {
 	text-align: center;
 	visibility: hidden;
 }
+#return {
+	display: block;
+	background-color: white;
+	width: 20%;
+	height: 9.5%;
+	border: none; 
+	margin-left: 10%;
+	text-align: center;
+	text-decoration: none;
+	color: gray;
+	font-family: 'Source Code Pro';
+	font-weight: 200;
+	font-size: 12px;
+	visibility: hidden;
+	cursor: pointer;
+}
+#hide{
+	display: block;
+	background-color: white;
+	width: 20%;
+	height: 9.5%;
+	border: none; 
+	margin-left: 10%;
+	text-align: center;
+	text-decoration: none;
+	color: gray;
+	font-family: 'Source Code Pro';
+	font-weight: 200;
+	font-size: 12px;
+	visibility: hidden;
+	cursor: pointer;
+}
 #clear {
 	display: block;
 	background-color: white;
@@ -62,6 +94,7 @@ ul {
 	font-size: 12px;
 	visibility: hidden;
 	cursor: pointer;
+	margin-bottom: 1.5%;
 }
 #sourcecodelink {
 	text-decoration: none;

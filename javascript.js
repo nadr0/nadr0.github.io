@@ -14,7 +14,7 @@ function mouseoverexamples(event){
       document.body.style.cursor = 'default';
     },false);
   };
-}
+};
 // Is the windows application still broken?
 function LoadiFrame(link,source,info,controls){
   
@@ -24,21 +24,23 @@ function LoadiFrame(link,source,info,controls){
   var sourcebutton = document.getElementById("sourcecode");
   var exampleinfo = document.getElementById("exampleinfo");
   var examplecontrols = document.getElementById("examplecontrols");
+  var hidebutton = document.getElementById("hide");
 
   if(exampleinfo.innerHTML === undefined){
     exampleinfo.innerHTML = "";
   }else{
     exampleinfo.innerHTML = info;
-  }
+  };
 
   if(examplecontrols.innerHTML === undefined){
     examplecontrols.innerHTML = "";
   }else{
     examplecontrols.innerHTML = controls;
-  }
+  };
 
   clearbutton.style.visibility = "visible";
   sourcebutton.style.visibility = "visible";
+  hidebutton.style.visibility = "visible";
 
   frame.src = link;
   frame.focus();
@@ -47,12 +49,13 @@ function LoadiFrame(link,source,info,controls){
 
   if(source === null){
     sourcecode.removeAttribute("href");
-  }
-}
+  };
+};
 
 function cleariframe(element){
   var frame = document.getElementById("frame");
   var sourcebutton = document.getElementById("sourcecode");
+  var hidebutton = document.getElementById("hide");
   var exampleinfo = document.getElementById("exampleinfo");
   var examplecontrols = document.getElementById("examplecontrols");
 
@@ -62,4 +65,29 @@ function cleariframe(element){
   frame.removeAttribute("src");
   element.style.visibility = "hidden";
   sourcebutton.style.visibility = "hidden";
-}
+  hidebutton.style.visibility = "hidden";
+
+};
+
+function resetsidebar(){
+  var leftlist = document.getElementById("leftlist");
+  var iframe = document.getElementById("iframe");
+  var returnbutton = document.getElementById("return")
+
+  returnbutton.style.visibility = "hidden";
+
+  iframe.style.marginLeft = "25%";
+  leftlist.style.marginLeft = "0%";
+
+};
+
+function hidesidebar(){
+  var leftlist = document.getElementById("leftlist");
+  var iframe = document.getElementById("iframe");
+  var returnbutton = document.getElementById("return");
+
+  returnbutton.style.visibility = "visible";
+
+  iframe.style.marginLeft = "15%";
+  leftlist.style.marginLeft = "-25%";
+};
