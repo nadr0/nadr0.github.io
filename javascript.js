@@ -1,4 +1,5 @@
 function mouseoverexamples(event){
+  var leftlist = document.getElementById('leftlist');
   var li = document.getElementsByTagName('li');
   for (var i = 0; i < li.length; i++) {
     li[i].addEventListener("mouseover", function( event ) {   
@@ -14,6 +15,11 @@ function mouseoverexamples(event){
       document.body.style.cursor = 'default';
     },false);
   };
+
+  leftlist.addEventListener("mouseover", function( event ) {
+    event.target.style.overflow = "scroll";
+  }, false);
+
 };
 // Is the windows application still broken?
 function LoadiFrame(link,source,info,controls){

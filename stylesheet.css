@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+} 
 #leftlist {
 	height: 100%;
 	width: 25%;
