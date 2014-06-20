@@ -44,14 +44,21 @@ function LoadiFrame(link,source,info,controls){
     examplecontrols.innerHTML = controls;
   };
 
+  if(!source){
+    sourcebutton.style.visibility = "hidden";
+    sourcecode.style.cursor = "default";
+    sourcecode.removeAttribute("href");
+    }else{
+    sourcebutton.style.visibility = "visible";
+    sourcecode.href = source;
+  };
+
   clearbutton.style.visibility = "visible";
-  sourcebutton.style.visibility = "visible";
   hidebutton.style.visibility = "visible";
 
   frame.src = link;
   frame.focus();
 
-  sourcecode.href = source;
 
   if(source === null){
     sourcecode.removeAttribute("href");
