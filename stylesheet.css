@@ -81,6 +81,10 @@ ul {
 	visibility: hidden;
 	cursor: pointer;
 }
+#return:hover{
+	opacity: 0.5;
+	background-color: lightBlue;
+}
 #hide{
 	display: block;
 	background-color: white;
