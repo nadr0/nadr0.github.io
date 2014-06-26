@@ -20,27 +20,27 @@
 
 			<div id="leftlistiems">	
 				<ul>
-					<li onclick="LoadiFrame(JSONObject.snow.src, JSONObject.snow.code, JSONObject.snow.info, JSONObject.snow.input)">Weather ~ Snow </li>
-					<li onclick="LoadiFrame(JSONObject.leaf.src, JSONObject.leaf.code, JSONObject.leaf.info, JSONObject.leaf.input)">Weather ~ Leaf </li>
-					<li onclick="LoadiFrame(JSONObject.rain.src,JSONObject.rain.code, JSONObject.rain.info ,JSONObject.rain.input)">Weather ~ Rain </li>
-					<li onclick="LoadiFrame(JSONObject.paulbunyan.src,JSONObject.paulbunyan.code, JSONObject.paulbunyan.info, JSONObject.paulbunyan.input)">Paul Bunyan </li>
-					<li onclick="LoadiFrame(JSONObject.coloredsquares.src,JSONObject.coloredsquares.code, JSONObject.coloredsquares.info, JSONObject.coloredsquares.input)">Colored Squares </li> 	
-					<li onclick="LoadiFrame(JSONObject.bleuetrouge.src, null, JSONObject.bleuetrouge.info, JSONObject.bleuetrouge.input)">Bleu Et Rouge </li>
+					<li onclick="LoadiFrame(JSONObject.snow.src, JSONObject.snow.code, JSONObject.snow.info, JSONObject.snow.input,JSONObject.snow.link1,JSONObject.snow.link2,JSONObject.snow.link3,JSONObject.snow.link1innerHTML,JSONObject.snow.link2innerHTML,JSONObject.snow.link3innerHTML)">Weather ~ Snow </li>
+					<li onclick="LoadiFrame(JSONObject.leaf.src, JSONObject.leaf.code, JSONObject.leaf.info, JSONObject.leaf.input,JSONObject.leaf.link1,JSONObject.leaf.link2,JSONObject.leaf.link3,JSONObject.leaf.link1innerHTML,JSONObject.leaf.link2innerHTML,JSONObject.leaf.link3innerHTML)">Weather ~ Leaf </li>
+					<li onclick="LoadiFrame(JSONObject.rain.src,JSONObject.rain.code, JSONObject.rain.info ,JSONObject.rain.input,JSONObject.rain.link1,JSONObject.rain.link2,JSONObject.rain.link3,JSONObject.rain.link1innerHTML,JSONObject.rain.link2innerHTML,JSONObject.rain.link3innerHTML)">Weather ~ Rain </li>
+					<li onclick="LoadiFrame(JSONObject.paulbunyan.src,JSONObject.paulbunyan.code, JSONObject.paulbunyan.info, JSONObject.paulbunyan.input,JSONObject.paulbunyan.link1,JSONObject.paulbunyan.link2,JSONObject.paulbunyan.link3,JSONObject.paulbunyan.link1innerHTML,JSONObject.paulbunyan.link2innerHTML,JSONObject.paulbunyan.link3innerHTML)">Paul Bunyan </li>
+					<li onclick="LoadiFrame(JSONObject.coloredsquares.src,JSONObject.coloredsquares.code, JSONObject.coloredsquares.info, JSONObject.coloredsquares.input,JSONObject.coloredsquares.link1,JSONObject.coloredsquares.link2,JSONObject.coloredsquares.link3,JSONObject.coloredsquares.link1innerHTML,JSONObject.coloredsquares.link2innerHTML,JSONObject.coloredsquares.link3innerHTML)">Colored Squares </li> 	
+					<li onclick="LoadiFrame(JSONObject.bleuetrouge.src, null, JSONObject.bleuetrouge.info, JSONObject.bleuetrouge.input,JSONObject.bleuetrouge.link1,JSONObject.bleuetrouge.link2,JSONObject.bleuetrouge.link3,JSONObject.bleuetrouge.link1innerHTML,JSONObject.bleuetrouge.link2innerHTML,JSONObject.bleuetrouge.link3innerHTML)">Bleu Et Rouge </li>
 				</ul>
 			</div>
 
 			<h1> In Progress </h1>
 			<div id="leftlistiems">
 				<ul>
-					<li onclick="LoadiFrame(JSONObject.dungeon.src,JSONObject.dungeon.code, JSONObject.dungeon.info, JSONObject.dungeon.input)">Dungeon</li>
+					<li onclick="LoadiFrame(JSONObject.dungeon.src,JSONObject.dungeon.code, JSONObject.dungeon.info, JSONObject.dungeon.input,null,null,null,null,null,null)">Dungeon</li>
 				</ul>
 			</div>	
 
 			<h1> Blog </h1>
 			<div id="leftlistiems">
 				<ul>
-					<li onclick="LoadiFrame(JSONObject2.randomdungeon.src, JSONObject2.randomdungeon.code, null, null)">Random Dungeon</li>
-					<li onclick="LoadiFrame(JSONObject2.dungeontypes.src, JSONObject2.dungeontypes.code, null, null)">Dungeon Types</li>
+					<li onclick="LoadiFrame(JSONObject2.randomdungeon.src, JSONObject2.randomdungeon.code, null, null,null,null,null,null,null,null)">Random Dungeon</li>
+					<li onclick="LoadiFrame(JSONObject2.dungeontypes.src, JSONObject2.dungeontypes.code, null, null,null,null,null,null,null,null)">Dungeon Types</li>
 				</ul>
 			</div>	
 			
@@ -50,6 +50,11 @@
 			<button id="hide" class="CSSTransition" onclick="hidesidebar()">HIDE</button>
 			<p id="exampleinfo"></p>
 			<p id="examplecontrols"></p>
+			<!-- 3 Links if the examples need to link another site -->
+			<!-- Better way of doing this? -->
+			<a id="link1" class="link" href="" target="_blank"></a>
+			<a id="link2" class="link" href="" target="_blank"></a>
+			<a id="link3" class="link" href="" target="_blank"></a>
 
 			<div id="information">
 				<p class="info">Kevin Nadro</p>

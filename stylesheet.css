@@ -32,6 +32,21 @@ li{
 ul {
 	list-style-type: none;
 }
+.link{
+	display: inline-block;
+	text-decoration:  none;
+	margin-left: 10%;
+	font-family: 'Source Code Pro';
+	font-weight: 200;
+	color: lightBlue;
+	width: 50%;
+	height: auto;
+	font-size: 100%;
+	text-align: left;
+}
+.link:hover{
+	text-decoration: underline;
+}
 #returnleftlist{
 	position: absolute;
 	text-align: center;

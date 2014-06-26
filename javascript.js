@@ -22,7 +22,7 @@ function mouseoverexamples(event){
 
 };
 // Is the windows application still broken?
-function LoadiFrame(link,source,info,controls){
+function LoadiFrame(link,source,info,controls,link1,link2,link3,link1IH,link2IH,link3IH){
   
   var frame = document.getElementById("frame");
   var sourcecode = document.getElementById("sourcecodelink");
@@ -30,7 +30,29 @@ function LoadiFrame(link,source,info,controls){
   var sourcebutton = document.getElementById("sourcecode");
   var exampleinfo = document.getElementById("exampleinfo");
   var examplecontrols = document.getElementById("examplecontrols");
+  var Link1 = document.getElementById("link1");
+  var Link2 = document.getElementById("link2");
+  var Link3 = document.getElementById("link3");
+
+
   var hidebutton = document.getElementById("hide");
+
+  Link1.innerHTML = "";
+  Link2.innerHTML = "";
+  Link3.innerHTML = "";
+
+  if(link1 != ""){
+    Link1.innerHTML = link1IH;
+    Link1.href = link1;
+  }
+  if(link2 != ""){
+    Link2.innerHTML = link2IH;
+    Link2.href = link2;
+  }
+  if(link3 != ""){
+    Link3.innerHTML = link3IH;
+    Link3.href = link3;
+  }
 
   if(exampleinfo.innerHTML === undefined){
     exampleinfo.innerHTML = "";
@@ -45,7 +67,7 @@ function LoadiFrame(link,source,info,controls){
   };
 
   if(!source){
-    sourcebutton.style.visibility = "hidden";
+    sourcebutton.style.display = "none";
     sourcecode.style.cursor = "default";
     sourcecode.removeAttribute("href");
     }else{
@@ -71,9 +93,15 @@ function cleariframe(element){
   var hidebutton = document.getElementById("hide");
   var exampleinfo = document.getElementById("exampleinfo");
   var examplecontrols = document.getElementById("examplecontrols");
+  var link1 = document.getElementById("link1");
+  var link2 = document.getElementById("link2");
+  var link3 = document.getElementById("link3");
 
   exampleinfo.innerHTML = "";
   examplecontrols.innerHTML = "";
+  link1.innerHTML = "";
+  link2.innerHTML = "";
+  link3.innerHTML = "";
 
   frame.removeAttribute("src");
   element.style.visibility = "hidden";
