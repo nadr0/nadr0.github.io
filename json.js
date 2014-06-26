@@ -69,7 +69,7 @@ var JSONObject = {
 		"link3":"http://clay.io/gotgame",
 		"link1innerHTML":"News Article",
 		"link2innerHTML":"Got Game? Winners - blog post",
-		"link3innerHTML":"Compeition details",
+		"link3innerHTML":"Competition details",
 	},
 	"dungeon":{
 		"src":"http://www.whaleblubber.net/Kevin/html/totych",
