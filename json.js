@@ -83,4 +83,16 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
+	"astar":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/A*/astar.html",
+		"code":"https://github.com/Levo/A-Star",
+		"info":"I created this A* pathfinding program to show it implemented in javascript.",
+		"input":"Click to place walls & Nodes;		Press Enter to Continue",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
 };

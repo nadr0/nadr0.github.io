@@ -21,6 +21,8 @@ function mouseoverexamples(event){
   }, false);
 
 };
+
+
 // Is the windows application still broken?
 function LoadiFrame(link,source,info,controls,link1,link2,link3,link1IH,link2IH,link3IH){
   
@@ -70,7 +72,9 @@ function LoadiFrame(link,source,info,controls,link1,link2,link3,link1IH,link2IH,
     sourcebutton.style.display = "none";
     sourcecode.style.cursor = "default";
     sourcecode.removeAttribute("href");
-    }else{
+    }
+  else{
+    sourcebutton.style.display = "block";
     sourcebutton.style.visibility = "visible";
     sourcecode.href = source;
   };
