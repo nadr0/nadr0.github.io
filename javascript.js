@@ -97,6 +97,7 @@ function cleariframe(element){
   var hidebutton = document.getElementById("hide");
   var exampleinfo = document.getElementById("exampleinfo");
   var examplecontrols = document.getElementById("examplecontrols");
+  var sourcecode = document.getElementById("sourcecodelink");
   var link1 = document.getElementById("link1");
   var link2 = document.getElementById("link2");
   var link3 = document.getElementById("link3");
@@ -110,6 +111,7 @@ function cleariframe(element){
   frame.removeAttribute("src");
   element.style.visibility = "hidden";
   sourcebutton.style.visibility = "hidden";
+  sourcecode.removeAttribute("href");
   hidebutton.style.visibility = "hidden";
 
 };
