@@ -86,7 +86,7 @@ ul {
 	visibility: hidden;
 
 	text-decoration: none;
-	color: gray;
+	color: white;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
 	font-size: 12px;
@@ -94,7 +94,7 @@ ul {
 }
 #sourcecode:hover{
 	opacity: 0.5;
-	background-color: lightBlue;
+	background-color: gray;
 }
 #return {
 	margin-top: 200%;
@@ -104,7 +104,7 @@ ul {
 	border: none; 
 	text-align: center;
 	text-decoration: none;
-	color: gray;
+	color: white;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
 	font-size: 12px;
@@ -113,7 +113,7 @@ ul {
 }
 #return:hover{
 	opacity: 0.5;
-	background-color: lightBlue;
+	background-color: gray;
 }
 #hide{
 	display: block;
@@ -124,7 +124,7 @@ ul {
 	margin-left: 10%;
 	text-align: center;
 	text-decoration: none;
-	color: gray;
+	color: white;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
 	font-size: 12px;
@@ -133,7 +133,7 @@ ul {
 }
 #hide:hover {
 	opacity: 0.5;
-	background-color: lightBlue;
+	background-color: gray;
 }
 #clear {
 	display: block;
@@ -144,7 +144,7 @@ ul {
 	margin-left: 10%;
 	text-align: center;
 	text-decoration: none;
-	color: gray;
+	color: white;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
 	font-size: 12px;
@@ -154,18 +154,18 @@ ul {
 }
 #clear:hover{
 	opacity: 0.5;
-	background-color: lightBlue;
+	background-color: gray;
 }
 #sourcecodelink {
 	text-decoration: none;
-	color: gray;
+	color: white;
 	font-family: 'Source Code Pro';
 	font-weight: 200;
 	font-size: 12px;
 	cursor: pointer;
 }
 #sourcecodelink:visited {
-	background-color: gray;
+	background-color: white;
 }
 #examplecontrols {
 	margin-left: 10%;
