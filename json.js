@@ -95,4 +95,17 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
+	"gameboy":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/gameboy",
+		"code":"",
+		"info":"This game was created for a gameboy game jam on game jolt. The objective is to collect the 5 coins on each level.",
+		"input":"Move: W & A & S & D;		Fire: LeftMouse;		SwitchWeapons: Q",
+		"link1":"http://jams.gamejolt.io/gbjam3",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"Game Jolt",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
+
 };
