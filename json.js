@@ -47,18 +47,6 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
-	"coloredsquares":{
-		"src":"http://www.whaleblubber.net/Kevin/html/coloredsquares/ColorSquare.html",
-		"code":"https://github.com/Levo/ColoringSquares",
-		"info":"A program that is great for making truchet tiles.",
-		"input":"Small Triangle: 1 & 2 & 3 & 4;      Big Triangle: Q & W & E & R; 	 Fill: 5;",
-		"link1":"",
-		"link2":"",
-		"link3":"",	
-		"link1innerHTML":"",
-		"link2innerHTML":"",
-		"link3innerHTML":"",
-	},
 	"bleuetrouge":{
 		"src":"http://www.whaleblubber.net/Kevin/html/bleuetrouge",
 		"code":"",
