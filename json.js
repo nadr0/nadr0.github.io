@@ -1,8 +1,8 @@
 var JSONObject = {
 	"snow":{
-		"src":"http://www.whaleblubber.net/Kevin/html/snow/SnowFall.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/SnowFall",
-		"info":"Snow is a part of a weather collection I am making. Just a simple example to simulate snow.",
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/weather/snow/SnowFall.html",
+		"code":"",
+		"info":"Snow is a part of a weather collection I am making. Just a simple example to represent snow.",
 		"input":"Move: A & D; 	 Jump: Space;",
 		"link1":"",
 		"link2":"",
@@ -12,8 +12,8 @@ var JSONObject = {
 		"link3innerHTML":"",
 	},
 	"leaf":{
-		"src":"http://www.whaleblubber.net/Kevin/html/leaf/LeafFall.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/LeafFall",
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/weather/leaves/LeafFall.html",
+		"code":"",
 		"info":"Leaf is a part of a weather collection I am making. It is my take on how leaves fall. ",
 		"input":"",
 		"link1":"",
@@ -23,18 +23,6 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	}, 
-	"rain":{
-		"src":"http://www.whaleblubber.net/Kevin/html/rain/RainFall.html",
-		"code":"https://github.com/Levo/DisplayMyExamples/tree/master/RainFall",
-		"info":"Rain is a part of a weather collection I am making. I want to rework this one. It is hard to see.",
-		"input":"Move: A & D; 	 Jump: Space;",
-		"link1":"",
-		"link2":"",
-		"link3":"",
-		"link1innerHTML":"",
-		"link2innerHTML":"",
-		"link3innerHTML":"",
-	},
 	"paulbunyan":{
 		"src":"http://www.whaleblubber.net/Kevin/html/paulbunyan/",
 		"code":"https://github.com/Levo/Pixi-Js/tree/master/Paul",
