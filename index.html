@@ -173,17 +173,11 @@
 		var render = function () {
 			requestAnimationFrame(render);
 
-			// Move the camera forward
 			camera.position.z = 35*Math.cos(clock.getElapsedTime());
 			camera.position.x = 45*Math.sin(clock.getElapsedTime());
-			// camera.rotation.z = Math.cos(clock.getElapsedTime());
 			camera.rotation.y = Math.sin(clock.getElapsedTime());
 
 			city.dance();
-
-			// Rotate the cube
-			// cube.rotation.x += 0.1;
-			// cube.rotation.z += 0.1;
 
 			renderer.render(scene, camera);
 		};

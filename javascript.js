@@ -135,11 +135,14 @@ function resetsidebar(){
 function hidesidebar(){
   var leftlist = document.getElementById("leftlist");
   var iframe = document.getElementById("iframe");
+  var frame = document.getElementById("frame");
   var returnbutton = document.getElementById("return");
   var returnleftlist = document.getElementById("returnleftlist");
 
   returnleftlist.style.width ="10%";
   returnleftlist.style.height = "100%";
+
+  frame.focus();
 
   returnbutton.style.visibility = "visible";
 
