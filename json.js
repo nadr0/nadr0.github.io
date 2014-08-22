@@ -83,5 +83,17 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
+	"raycast":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/raycasting/raycast.html",
+		"code":"https://github.com/Levo/raycasting",
+		"info":"I found a tutorial on how to implement raycasting and ported it to javascript",
+		"input":"Move: W & A & S & D",
+		"link1":"http://lodev.org/cgtutor/raycasting.html",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"Lode's Raycasting Tutorial",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
 
 };
