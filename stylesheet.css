@@ -51,6 +51,8 @@ ul {
 }
 .link:hover{
 	text-decoration: underline;
+	text-shadow: 1px 1px 1px #000;
+
 }
 #returnleftlist{
 	position: absolute;
@@ -62,7 +64,7 @@ ul {
 .CSSTransition{
 	opacity: 1;
 
-	background-color: #bdc3c7;
+	background-color: rgba(0, 0, 0, 0.6);
 
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
@@ -81,7 +83,7 @@ ul {
 	transform: scale(0.80,0.80);
 }
 .CSSTransition:hover{
-	background-color: #7f8c8d;
+	background-color: rgba(230, 126, 34, 0.8);
 }
 #sourcecode {
 	position: relative;
@@ -191,6 +193,16 @@ ul {
 	font-weight: 200;
 	font-size: 100%;	
 	text-indent: 5%;
+}
+.divider{
+	position: absolute;
+	width: 250px;
+	right: 25px;
+	height: 1px;
+	background-color: #bdc3c7;
+}
+#linkHolder{
+	margin-top: 35px;
 }
 #githublink {
 	text-decoration: none;
