@@ -3,13 +3,13 @@ function mouseoverexamples(event){
   var li = document.getElementsByTagName('li');
   for (var i = 0; i < li.length; i++) {
     li[i].addEventListener("mouseover", function( event ) {   
-      event.target.style.fontSize = 110 + "%";
+      event.target.style.textShadow="1.2px 1.2px 1.2px #000";
       event.target.style.textDecoration = "underline";
       event.target.style.listStyleType = 'square';
       document.body.style.cursor = 'pointer';
     }, false);
     li[i].addEventListener("mouseout", function( event ) {
-      event.target.style.fontSize = 100 + "%";
+      event.target.style.textShadow="0px 0px 0px #000";
       event.target.style.textDecoration = "none";
       event.target.style.listStyleType = 'none';
       document.body.style.cursor = 'default';

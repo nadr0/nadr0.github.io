@@ -1,40 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400);
+
 body{
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
 } 
-#threejs{
-	z-index: -500;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
 #leftlist {
 	height: 100%;
-	width: 25%;
+	width: 300px;
 	position: absolute;
+	background-color: rgba(0,0,0,0.3);
 }
 #leftlistiems {
-	width: 65%;
+	width: 250px;
 }
 #iframe {
 	position: absolute;
 	width: 75%;
 	height: 100%;
-	margin-left: 25%;
+	margin-left: 310px;
 }
 h1 {
-	color: black;
-	font-family: 'Source Code Pro';
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
 	font-weight: 600;
-	font-size: 120%;	
+	font-size: 1.5em;	
 	text-indent: 5%;
 }
 li{
-	color: black;
-	font-family: 'Source Code Pro';
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
-	font-size: 100%;	
+	font-size: 1em;	
 	text-indent: 5%;
 }
 ul {
@@ -44,9 +41,9 @@ ul {
 	display: inline-block;
 	text-decoration:  none;
 	margin-left: 10%;
-	font-family: 'Source Code Pro';
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
-	color: crimson;
+	color: #e74c3c;
 	width: 50%;
 	height: auto;
 	font-size: 100%;
@@ -64,6 +61,9 @@ ul {
 }
 .CSSTransition{
 	opacity: 1;
+
+	background-color: #bdc3c7;
+
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
@@ -71,107 +71,105 @@ ul {
 	transition: background-color .25s ease-in-out;
 	-moz-transition: background-color .25s ease-in-out;
 	-webkit-transition: background-color .25s ease-in-out;
+	border: 1px solid;
+	border-radius: 6px;
+}
+.CSSTransition:active{
+	transition: all 0.1s ease-in-out;
+ 	-ms-transform: scale(0.80,0.80); 
+	-webkit-transform: scale(0.80,0.80);
+	transform: scale(0.80,0.80);
+}
+.CSSTransition:hover{
+	background-color: #7f8c8d;
 }
 #sourcecode {
-
+	position: relative;
+	float: left;
 	margin-top: 15%;
-	display: block;
-	background-color: black;
-	width: 20%;
 	margin-bottom: 1.5%;
-	height: 9.5%;
+	width: 55px;
+	height: 40px;
 	border: none; 
 	margin-left: 10%;
 	text-align: center;
 	visibility: hidden;
-
+	top: -45px;
 	text-decoration: none;
 	color: white;
-	font-family: 'Source Code Pro';
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
 	font-size: 12px;
 	cursor: pointer;
-}
-#sourcecode:hover{
-	opacity: 0.5;
-	background-color: gray;
 }
 #return {
 	margin-top: 200%;
-	background-color: black;
-	width: 40%;
-	height: 7.5%;
+	width: 55px;
+	height: 40px;
 	border: none; 
 	text-align: center;
 	text-decoration: none;
-	color: white;
-	font-family: 'Source Code Pro';
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
 	font-size: 12px;
 	visibility: hidden;
 	cursor: pointer;
-}
-#return:hover{
-	opacity: 0.5;
-	background-color: gray;
 }
 #hide{
+	position: relative;
 	display: block;
-	background-color: black;
-	width: 20%;
-	height: 9.5%;
+	width: 45px;
+	height: 40px;
+	float: left;
 	border: none; 
 	margin-left: 10%;
 	text-align: center;
 	text-decoration: none;
-	color: white;
-	font-family: 'Source Code Pro';
-	font-weight: 200;
-	font-size: 12px;
-	visibility: hidden;
-	cursor: pointer;
-}
-#hide:hover {
-	opacity: 0.5;
-	background-color: gray;
-}
-#clear {
-	display: block;
-	background-color: black;
-	width: 20%;
-	height: 9.5%;
-	border: none; 
-	margin-left: 10%;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	font-family: 'Source Code Pro';
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
 	font-size: 12px;
 	visibility: hidden;
 	cursor: pointer;
 	margin-bottom: 1.5%;
 }
-#clear:hover{
-	opacity: 0.5;
-	background-color: gray;
+#clear {
+	position: relative;
+	display: block;
+	width: 45px;
+	height: 40px;
+	float: left;
+	border: none; 
+	margin-left: 10%;
+	text-align: center;
+	text-decoration: none;
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
+	font-weight: 200;
+	font-size: 12px;
+	visibility: hidden;
+	cursor: pointer;
+	margin-bottom: 1.5%;
 }
 #sourcecodelink {
 	text-decoration: none;
 	color: white;
-	font-family: 'Source Code Pro';
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
 	font-size: 12px;
 	cursor: pointer;
+	width: 55px;
+	height: 40px;
 }
 #sourcecodelink:visited {
 	background-color: white;
 }
 #examplecontrols {
 	margin-left: 10%;
-	font-family: 'Source Code Pro';
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
-	color: black;
+	color: #ecf0f1;
 	width: 50%;
 	height: auto;
 	font-size: 100%;
@@ -179,27 +177,66 @@ ul {
 }
 #exampleinfo {
 	margin-left: 10%;
-	font-family: 'Source Code Pro';
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
-	color: black;
+	color: #ecf0f1;
 	width: 50%;
 	height: auto;
 	font-size: 100%;
-	text-align: left;	
+	text-align: left;
 }
 .info {
-	color: black;
-	font-family: 'Source Code Pro';
+	color: #ecf0f1;
+	font-family: 'Alegreya Sans SC';
 	font-weight: 200;
 	font-size: 100%;	
 	text-indent: 5%;
 }
 #githublink {
 	text-decoration: none;
-	color: black;
+	color: #ecf0f1;
 }
 #githublink:visited {
-	text-decoration: black;
+	text-decoration: #ecf0f1;
+}
+
+#buttons{
+	top: 10px;
+	position: relative;
+	display: inline-block;
+	width: 300px;
 }
 
 button:focus {outline:0;};
+
+/*
+	BG:Turquoise - #1abc9c
+	B:Green Sea - #16a085
+	
+	Emerald - #2ecc71
+	Nephritis - #27ae60
+
+	Peter River - #3498db
+	Belize Hole - #2980b9
+
+	Amethyst - #9b59b6
+	Wisteria - #8e44ad
+
+	Wet Asphalt - #34495e
+	Midnight Blue - #2c3e50
+
+	Sun Flower - #f1c40f
+	Orange - #f39c12
+	
+	Carrot - #e67e22
+	Pumpkin - #d35400
+
+	Alizarin - #e74c3c
+	Pomegranate - #c0392b
+
+	Clouds - #ecf0f1
+	Silver - #bdc3c7
+
+	Concrete - #95a5a6
+	Asbestos - #7f8c8d
+*/
