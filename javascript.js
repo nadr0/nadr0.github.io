@@ -21,7 +21,7 @@ function mouseoverexamples(event){
   };
 
   leftlist.addEventListener("mouseover", function( event ) {
-    leftlist.style.overflow = "scroll";
+    leftlist.style.overflowY = "scroll";
   }, false);
 
 };
