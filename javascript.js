@@ -3,14 +3,18 @@ function mouseoverexamples(event){
   var li = document.getElementsByTagName('li');
   for (var i = 0; i < li.length; i++) {
     li[i].addEventListener("mouseover", function( event ) {   
-      event.target.style.textShadow="1.2px 1.2px 1.2px #000";
-      event.target.style.textDecoration = "underline";
+      // event.target.style.textShadow="1.2px 1.2px 1.2px #000";
+      // event.target.style.textDecoration = "underline";
       event.target.style.listStyleType = 'square';
+      // event.target.style.color = "#e67e22";
+      event.target.style.backgroundColor = "rgba(22, 160, 133, 0.5)";
       document.body.style.cursor = 'pointer';
     }, false);
     li[i].addEventListener("mouseout", function( event ) {
-      event.target.style.textShadow="0px 0px 0px #000";
-      event.target.style.textDecoration = "none";
+      // event.target.style.textShadow="0px 0px 0px #000";
+      // event.target.style.color = "#ecf0f1";
+      event.target.style.backgroundColor = "rgba(230, 126, 34, 0.0)";
+      // event.target.style.textDecoration = "none";
       event.target.style.listStyleType = 'none';
       document.body.style.cursor = 'default';
     },false);
@@ -107,7 +111,6 @@ function cleariframe(element){
   link1.innerHTML = "";
   link2.innerHTML = "";
   link3.innerHTML = "";
-
   frame.removeAttribute("src");
   element.style.visibility = "hidden";
   sourcebutton.style.visibility = "hidden";
