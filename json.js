@@ -119,5 +119,17 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
+	"dither":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/dither/dither.html",
+		"code":"https://github.com/Levo/dither",
+		"info":"Floyd-Stienberg dithering.",
+		"input":"",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
 
 };
