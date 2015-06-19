@@ -40,7 +40,7 @@ var JSONObject = {
 		"code":"",
 		"info":"I created this game for Clay.io's Got Game? competition // 2014. It was one month of development and a two week judging process. I placed 4th and won a Nexus 7.",
 		"input":"",
-		"link1":"http://www.waubonsee.edu/news/stories/2014/20140620VideoGameDesignContestNadro.php",
+		"link1":"http://www.waubonsee.edu/news/archive/2014/20140620VideoGameDesignContestNadro.php",
 		"link2":"http://clay.io/blog/announcing-the-got-game-2014-winners/",
 		"link3":"http://clay.io/gotgame",
 		"link1innerHTML":"News Article",
