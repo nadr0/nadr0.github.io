@@ -131,5 +131,45 @@ var JSONObject = {
 		"link2innerHTML":"",
 		"link3innerHTML":"",
 	},
+	"lsystem":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/lsystem/index.html",
+		"code":"https://github.com/Levo/L-S",
+		"info":"L systems",
+		"input":"",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
+	"curve":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/curves/curves.html",
+		"code":"https://github.com/Levo/curves",
+		"info":"Bezier curve",
+		"input":"",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	},
+	"quadtree":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/quadtree/index.html",
+		"code":"https://github.com/Levo/Quadtree",
+		"info":"Bezier curve",
+		"input":"http://gamedevelopment.tutsplus.com/tutorials/quick-tip-use-quadtrees-to-detect-likely-collisions-in-2d-space--gamedev-374",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"Quadtree Tutorial",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+	}
+
+
+
+
 
 };
