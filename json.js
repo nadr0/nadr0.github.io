@@ -166,6 +166,18 @@ var JSONObject = {
 		"link1innerHTML":"Quadtree Tutorial",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+	},
+	"sob3l":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/sob3l/sob3l.html",
+		"code":"https://github.com/Levo/sob3l",
+		"info":"Using the Sobel operator to perform edge detection in images.",
+		"input":"",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
 	}
 
 
