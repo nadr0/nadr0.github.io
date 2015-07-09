@@ -158,7 +158,7 @@ var JSONObject = {
 	"quadtree":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/quadtree/index.html",
 		"code":"https://github.com/Levo/Quadtree",
-		"info":"Bezier curve",
+		"info":"Visual representation of quadtrees with objects bouncing around.",
 		"input":"",
 		"link1":"http://gamedevelopment.tutsplus.com/tutorials/quick-tip-use-quadtrees-to-detect-likely-collisions-in-2d-space--gamedev-374",
 		"link2":"",
