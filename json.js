@@ -170,7 +170,7 @@ var JSONObject = {
 	"sob3l":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/sob3l/sob3l.html",
 		"code":"https://github.com/Levo/sob3l",
-		"info":"Using the Sobel operator to perform edge detection in images.",
+		"info":"Using the Sobel operator to perform edge detection in images. The threshold value should range from [0,255]",
 		"input":"",
 		"link1":"",
 		"link2":"",
