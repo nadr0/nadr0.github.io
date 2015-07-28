@@ -178,9 +178,21 @@ var JSONObject = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+	},
+	"hough":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/hough/hough.html",
+		"code":"https://github.com/Levo/hough",
+		"info":"Implemented the hough transform to detect straight lines in an image.",
+		"input":"",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
 	}
 
-
+	
 
 
 
