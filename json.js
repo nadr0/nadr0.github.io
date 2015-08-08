@@ -190,7 +190,20 @@ var JSONObject = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+	},
+	"turtle3d":{
+		"src":"http://cranberrycinnamon.com/Kevin/WEB/turtle3D/",
+		"code":"https://github.com/Levo/turtle3D",
+		"info":"3D L-System with turtle graphics. I have it drawing a 3D hilbert curve.",
+		"input":"W,S : move forward; A,D: roll; Up,Down arrow: pitch;",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
 	}
+
 
 	
 
