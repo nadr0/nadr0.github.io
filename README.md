@@ -1,3 +1,3 @@
-# levo.github.io or kevinnadro.me
+kevinnadro.me
 
-My website!
+My website! I have all my projects hosted on this site!
