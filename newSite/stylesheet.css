@@ -38,17 +38,46 @@
 	top: -1em;
 }
 #projectContent{
+	position: relative;
 	width: 1000px;
 	height: 500px;
 	position: relative;
 	background-color: rgba(230, 126, 34, 0.1);
 	margin: 0 auto;
 }
-#projectInfo{
-	
+#projectNames{
+	position: relative;
+	width: 250px;
+	height: 400px;
+	top: 50px;
+	left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(39, 174, 96, 0.1);
 }
-
-
+#projectInfo{
+	position: relative;
+	left: 100px;
+	width: 600px;
+	height: 400px;
+	top: 50px;
+	display: inline-block;
+	background-color: rgba(26, 188, 156, 0.1);
+}
+li{
+	position: relative;
+	display: table-row;
+	font-family: Inconsolata;
+}
+ul{
+	position: relative;
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: middle;
+	transform: translateY(-50%);
+	top: 50%;
+	margin: 0;
+}
 /*
 	BG:Turquoise - #1abc9c
 	rgba(26, 188, 156,1.0)
