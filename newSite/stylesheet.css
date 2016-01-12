@@ -5,15 +5,48 @@
 	position: relative;
 	width: 750px;
 	height: 250px;
-	background-color: #1abc9c;
+	background-color: rgba(46, 204, 113, 0.1);
 	margin: 0 auto;
 }
 #myName{
 	text-align: center;
 	font-family: Inconsolata;
 	font-size: 5em;
+	padding-top: 25px;
 }
-
+.headerImageContainer{
+	position: relative;
+	margin-top: 35px;
+}
+#uiucImage{
+	position: relative;
+	display: inline-block;
+	left: 216.5px;
+}
+#githubImage{
+	position: relative;
+	display: inline-block;
+	left: 167px;
+}
+#csIllinois{
+	width: 135px;
+	height: 150px;
+	position: relative;
+	display: inline-block;
+	font-family: Inconsolata;
+	font-size: 1em;
+	top: -1em;
+}
+#projectContent{
+	width: 1000px;
+	height: 500px;
+	position: relative;
+	background-color: rgba(230, 126, 34, 0.1);
+	margin: 0 auto;
+}
+#projectInfo{
+	
+}
 
 
 /*
