@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+
+#headerInfo{
+	position: relative;
+	width: 750px;
+	height: 250px;
+	background-color: #1abc9c;
+	margin: 0 auto;
+}
+#myName{
+	text-align: center;
+	font-family: Inconsolata;
+	font-size: 5em;
+}
+
+
+
+/*
+	BG:Turquoise - #1abc9c
+	rgba(26, 188, 156,1.0)
+
+	B:Green Sea - #16a085
+	rgba(22, 160, 133,1.0)
+
+	Emerald - #2ecc71
+	rgba(46, 204, 113,1.0)
+
+	Nephritis - #27ae60
+	rgba(39, 174, 96,1.0)
+
+	Peter River - #3498db
+	Belize Hole - #2980b9
+
+	Amethyst - #9b59b6
+	Wisteria - #8e44ad
+
+	Wet Asphalt - #34495e
+	Midnight Blue - #2c3e50
+
+	Sun Flower - #f1c40f
+	rgba(241, 196, 15,1.0)
+
+	Orange - #f39c12
+	rgba(243, 156, 18,1.0)
+
+	Carrot - #e67e22
+	rgba(230, 126, 34,1.0)
+
+	Pumpkin - #d35400
+	rgba(211, 84, 0,1.0)
+
+	Alizarin - #e74c3c
+	Pomegranate - #c0392b
+
+	Clouds - #ecf0f1
+	Silver - #bdc3c7
+
+	Concrete - #95a5a6
+	Asbestos - #7f8c8d
+*/
