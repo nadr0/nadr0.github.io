@@ -70,18 +70,17 @@
 	transform: translateY(-50%);
 	top: 50%;
 	width: 80%;
+	height: auto;
 	background-color: rgba(243, 156, 18,0.2);
 	font-family: Inconsolata;	
 }
 #projectButtons{
-	position: relative;
-	width: 100%;
-	height: 15%;
-	display: inline-block;
+	position: absolute;
+	width: 600px;
+	height: 50px;
 	background-color: rgba(231, 76, 60, 0.2);
-	top: 85%;
-	margin: 0;
-	padding: 0;
+	left: 354px;
+	top: 400px;
 }
 li{
 	position: relative;
@@ -91,13 +90,10 @@ li{
 }
 ul{
 	position: relative;
-	/*display: inline-block;*/
 	vertical-align: middle;
 	transform: translateY(-50%);
 	top: 50%;
 	margin: 0;
-
-
 }
 .pButtons{
 	width: 15%;
@@ -107,9 +103,20 @@ ul{
 	margin-left: 82px;
 	font-family: 'Inconsolata', serif;
 	vertical-align: top;
+	display: inline-block;
 }
 #codeButton{
 	padding-top: 4px;
+}
+
+#projectCanvas{
+	position: absolute;
+    left:50%;
+    margin-left:-625px;
+	background-color: blue;
+	width: 1250px;
+	height: 600px;
+}
 
 /*
 	BG:Turquoise - #1abc9c
