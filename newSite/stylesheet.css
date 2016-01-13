@@ -4,7 +4,7 @@
 	position: relative;
 	width: 750px;
 	height: 250px;
-	background-color: rgba(46, 204, 113, 0.2);
+	/*background-color: rgba(46, 204, 113, 0.2);*/
 	margin: 0 auto;
 }
 #myName{
@@ -40,7 +40,6 @@
 	position: relative;
 	width: 1000px;
 	height: 500px;
-	position: relative;
 	background-color: rgba(230, 126, 34, 0.2);
 	margin: 0 auto;
 }
@@ -52,7 +51,7 @@
 	left: 50px;
 	display: inline-block;
 	vertical-align: top;
-	background-color: rgba(39, 174, 96, 0.2);
+	/*background-color: rgba(39, 174, 96, 0.2);*/
 }
 #projectInfo{
 	position: relative;
@@ -61,24 +60,24 @@
 	height: 350px;
 	top: 50px;
 	display: inline-block;
-	background-color: rgba(26, 188, 156, 0.2);	
+	/*background-color: rgba(26, 188, 156, 0.2);	*/
 }
 #projectText{
 	left: 10%;
 	position: relative;
-	display: inline-block;
+	display: none;
 	transform: translateY(-50%);
 	top: 50%;
 	width: 80%;
 	height: auto;
-	background-color: rgba(243, 156, 18,0.2);
+	/*background-color: rgba(243, 156, 18,0.2);*/
 	font-family: Inconsolata;	
 }
 #projectButtons{
 	position: absolute;
 	width: 600px;
 	height: 50px;
-	background-color: rgba(231, 76, 60, 0.2);
+	/*background-color: rgba(231, 76, 60, 0.2);*/
 	left: 354px;
 	top: 400px;
 }
@@ -109,13 +108,15 @@ ul{
 	padding-top: 4px;
 }
 
-#projectCanvas{
+#project_iframe{
 	position: absolute;
     left:50%;
     margin-left:-625px;
-	background-color: blue;
 	width: 1250px;
 	height: 600px;
+	border: none;
+	display: none;
+	z-index: 1;
 }
 
 /*
