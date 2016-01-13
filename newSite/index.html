@@ -4,11 +4,16 @@
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
 		<script type="text/javascript" src="input.js"></script>
 		<script type="text/javascript" src="data.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="jquery.backstretch.min.js"></script>
 	</head>
 	<body>
 
+	<div id="backgroundImageContainer"><img id="backgroundImage" src="images/background_code.png"></div>
+
+
 	<!-- HEADER CONTENT -->
-	<div id="headerInfo">
+	<div id="headerInfo" class="NO_SELECT">
 		<div id="myName">Kevin Nadro</div>	
 
 		<div class="headerImageContainer">
@@ -29,7 +34,7 @@
 	<!-- PROJECT CONTENT -->
 	<div id="projectContent">
 
-		<div id="projectNames">
+		<div id="projectNames" class="NO_SELECT">
 			<ul>
 				<li onclick="loadData(data.snow)">Weather / Snow</li>
 				<li onclick="loadData(data.leaf)">Weather / Leaf</li>
@@ -49,7 +54,8 @@
 		</div>
 
 		<div id="projectInfo">
-			<div id="projectText">
+			<div id="projectName">Test</div>
+			<div id="projectText" class="NO_SELECT">
 			this is some sample text that would be placed here in this box relating to the project on that was clicked on to the left over there 
 			</div>
 		</div>

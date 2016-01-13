@@ -2,7 +2,7 @@ var data = {
 	"snow":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/weather/snow/SnowFall.html",
 		"code":"",
-		"info":"Snow is a part of a weather collection I am making. Just a simple example to represent snow.",
+		"info":"This was one of the first pieces of javascript code I wrote working with the canvas. Its just a simple representation of animating snow. ",
 		"input":"Move: A & D; 	 Jump: Space;",
 		"link1":"",
 		"link2":"",
@@ -10,6 +10,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"snow",
 	},
 	"leaf":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/weather/leaves/LeafFall.html",
@@ -22,6 +23,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"leaf",
 	}, 
 	"paulbunyan":{
 		"src":"http://www.whaleblubber.net/Kevin/html/paulbunyan/",
@@ -34,6 +36,7 @@ var data = {
 		"link1innerHTML":"Public Domain game Jam Article",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"Paul Bunyan",
 	},
 	"bleuetrouge":{
 		"src":"http://www.whaleblubber.net/Kevin/html/bleuetrouge",
@@ -46,6 +49,7 @@ var data = {
 		"link1innerHTML":"News Article",
 		"link2innerHTML":"Got Game? Winners - blog post",
 		"link3innerHTML":"Competition details",
+		"title":"Bleu et Rouge",
 	},
 	"dungeon":{
 		"src":"http://www.whaleblubber.net/Kevin/html/totych",
@@ -58,6 +62,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"Dungeon",
 	},
 	"astar":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/A*/astar.html",
@@ -70,6 +75,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"A*",
 	},
 	"gameboy":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/gameboy",
@@ -82,6 +88,7 @@ var data = {
 		"link1innerHTML":"Game Jolt",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"Gameboy",
 	},
 	"raycast":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/raycasting/raycast.html",
@@ -94,6 +101,7 @@ var data = {
 		"link1innerHTML":"Lode's Raycasting Tutorial",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"raycast",
 	},
 	"maze":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/Maze/maze.html",
@@ -106,6 +114,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"maze",
 	},
 	"graph":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/Graph/graph.html",
@@ -118,6 +127,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"graph",
 	},
 	"dither":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/dither/dither.html",
@@ -130,6 +140,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"dither",
 	},
 	"lsystem":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/lsystem/index.html",
@@ -142,6 +153,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"L System",
 	},
 	"curve":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/curves/curves.html",
@@ -154,6 +166,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"bezier curve",
 	},
 	"turtle3d":{
 		"src":"http://cranberrycinnamon.com/Kevin/WEB/turtle3D/",
@@ -166,6 +179,7 @@ var data = {
 		"link1innerHTML":"",
 		"link2innerHTML":"",
 		"link3innerHTML":"",
+		"title":"3D L System",
 	}
 
 

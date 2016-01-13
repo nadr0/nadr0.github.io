@@ -1,10 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display+SC);
+.NO_SELECT{
+	background-repeat: no-repeat;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+#backgroundImageContainer{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+    -webkit-filter: blur(2px);
+    overflow: scroll;
+}
+#backgroundImage{
+	height: 1402.5px;
+	width: 1317px;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
 #headerInfo{
 	position: relative;
 	width: 750px;
 	height: 250px;
-	/*background-color: rgba(46, 204, 113, 0.2);*/
 	margin: 0 auto;
 }
 #myName{
@@ -40,7 +65,7 @@
 	position: relative;
 	width: 1000px;
 	height: 500px;
-	background-color: rgba(230, 126, 34, 0.2);
+	background-color: rgba(189, 195, 199, 0.5);
 	margin: 0 auto;
 }
 #projectNames{
@@ -72,6 +97,18 @@
 	height: auto;
 	/*background-color: rgba(243, 156, 18,0.2);*/
 	font-family: Inconsolata;	
+}
+#projectName{
+	position: absolute;
+	font-family: Inconsolata;
+	left:50%;
+	font-size: 2em;
+    margin-left: -300px;
+    width: 600px;
+    height: 50px;
+    padding-top: 0.5em;
+    text-align: center;
+    display: none;
 }
 #projectButtons{
 	position: absolute;

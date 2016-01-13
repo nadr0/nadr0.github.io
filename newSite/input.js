@@ -29,8 +29,14 @@ function loadData(data){
 
   /* Github repo button */
   var githubRepo = document.getElementById("githublinkButton");
-
+  /* Github img for link*/
   var githubRepoImg = document.getElementById("githublinkImg");
+
+  /* Get the project title*/
+  var projectTitle = document.getElementById("projectName");
+  
+  /* Setting the project title*/
+  projectTitle.innerHTML = data.title;
 
   /* Set project text */
   projectText.innerHTML = data.info;
@@ -46,8 +52,10 @@ function loadData(data){
     githubRepoImg.src = "";
   }
 
+  /* Display everything */
   displayButtons();
   displayProjectText();
+  displayProjectTitle();
 }
 
 /* 
@@ -57,6 +65,21 @@ function clearData(){
   hideProjectText();
   hideButtons();
   hide_iframe();
+  hideProjectTitle();
+}
+
+/*
+  Display project title
+*/
+function displayProjectTitle(){
+  var projectTitle = document.getElementById("projectName");
+  projectTitle.style.display = "inline";
+}
+
+/* Hide project title*/
+function hideProjectTitle(){
+  var projectTitle = document.getElementById("projectName");
+  projectTitle.style.display = "none";
 }
 
 /* 
