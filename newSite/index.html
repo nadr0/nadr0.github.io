@@ -27,9 +27,11 @@
 			</div>
 		</div>
 	</div>
-	
-	<iframe id="project_iframe" src=""></iframe>
 
+	<div id="frameContainer">
+		<iframe id="project_iframe" src=""></iframe>
+		<button class="pButtons" id="returnButton" onclick="hide_iframe()">RETURN</button>
+	</div>
 
 	<!-- PROJECT CONTENT -->
 	<div id="projectContent">
@@ -69,7 +71,9 @@
 	</div>
 
 	<script>
+		/* Mouse over events for li elements (the project names)*/
 		mouseoverexamples(event);
+
 		/* canvas button */
 		var canvasButton = document.getElementById("canvasButton");
 
@@ -78,6 +82,9 @@
 
 		/* clear button */
 		var clearButton = document.getElementById("clearcodeButton");
+
+		/* return button */
+		var returnButton = document.getElementById("returnButton");
 
 		hideButtons();
 	</script>

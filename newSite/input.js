@@ -35,6 +35,20 @@ function loadData(data){
   /* Get the project title*/
   var projectTitle = document.getElementById("projectName");
   
+  /* Get canvas button */
+  var canvasButton = document.getElementById("canvasButton");
+
+  /* Set the onlick event*/
+  if(data.src){
+    /* Show that there is a canvas element to display*/
+    canvasButton.onclick = function(){display_iframe(data.src)};
+    canvasButton.innerHTML = "CANVAS";
+  }else{
+    /* No canvas or program to display */
+    canvasButton.onclick = function(){/*Nothing*/};
+    canvasButton.innerHTML = "";
+  }
+
   /* Setting the project title*/
   projectTitle.innerHTML = data.title;
 
@@ -122,16 +136,20 @@ function hideButtons(){
   canvasButton.style.display = "none";
   githubButton.style.display = "none";
   clearButton.style.display = "none";
-
+  returnButton.style.display = "none";
 }
 
 /*
   Displays and populates the iframe element
 */
-function display_iframe(data){
+function display_iframe(src){
   var iframe = document.getElementById("project_iframe");
+  var frameContainer = document.getElementById("frameContainer");
+  frameContainer.style.display = "inline";
+  displayReturnButton();
   iframe.style.display = "inline";
-  iframe.src = data.src;
+  iframe.src = src;
+  iframe.focus();
 }
 
 /*
@@ -139,6 +157,40 @@ function display_iframe(data){
 */
 function hide_iframe(){  
   var iframe = document.getElementById("project_iframe");
+  var frameContainer = document.getElementById("frameContainer");
+  frameContainer.style.display = "none";
   iframe.style.display = "none";
   iframe.src = "";
+  hideReturnButton();
+}
+
+
+/* 
+  Display controls
+*/
+function displayControls(){
+  var projectControls = document.getElementById("project_controls");
+  projectControls.style.display = "inline";
+}
+
+/* 
+  Hide controls
+*/
+function hideControls(){
+  var projectControls = document.getElementById("project_controls");
+  projectControls.style.display = "none";
+}
+
+/*  
+  Display return button
+*/
+function displayReturnButton(){
+  returnButton.style.display = "inline";
+}
+
+/*
+  Hide return button
+*/
+function hideReturnButton(){
+  returnButton.style.display = "none";
 }
