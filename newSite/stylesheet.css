@@ -90,9 +90,9 @@ body::-webkit-scrollbar {
 #projectText{
 	left: 10%;
 	position: relative;
-	display: none;
-	transform: translateY(-50%);
-	top: 50%;
+	display: inline;
+	/*transform: translateY(-50%);*/
+	top: 125px;
 	width: 80%;
 	height: auto;
 	/*background-color: rgba(243, 156, 18,0.2);*/
@@ -186,6 +186,10 @@ ul{
 	background-color: rgba(127, 140, 141, 0.8);
 }
 
+.links{
+	position: relative;
+	display: inline-block;
+}
 /*
 	BG:Turquoise - #1abc9c
 	rgba(26, 188, 156,1.0)

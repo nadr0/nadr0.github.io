@@ -186,8 +186,13 @@ var data = {
 		"code":"",
 		"info":"I took CS 445: Computational Photography (Fall 2015) @ UIUC with Derek Hoiem. Currently my most favorite course taken at UIUC (thanks Derek). Here is a list of the projects I completed in this course.",		
 		"title":"CS 445: Computational Photography",
+	},
+	"btree":{
+		"src":"http://kevinnadro.me/btree/",
+		"code":"https://github.com/nadr0/btree",
+		"info":"Btree applet",		
+		"title":"btree",
 	}
-
 
 	// https://courses.engr.illinois.edu/cs445/
 
