@@ -85,7 +85,27 @@ body::-webkit-scrollbar {
 	height: 350px;
 	top: 50px;
 	display: inline-block;
+	overflow: scroll;	
 	/*background-color: rgba(26, 188, 156, 0.2);	*/
+}
+#linkContainer{
+	position: absolute;
+	top: 230px;
+	display: block;
+	width: 80%;
+	left: 0px;
+	height: 50px;
+}
+.links{
+	position: relative;
+	display: block;
+	
+}
+.link{
+	font-family: Inconsolata;
+}
+.link:visited {
+	text-decoration: none;
 }
 #projectText{
 	left: 10%;
@@ -186,10 +206,6 @@ ul{
 	background-color: rgba(127, 140, 141, 0.8);
 }
 
-.links{
-	position: relative;
-	display: inline-block;
-}
 /*
 	BG:Turquoise - #1abc9c
 	rgba(26, 188, 156,1.0)

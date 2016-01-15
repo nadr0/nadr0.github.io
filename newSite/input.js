@@ -23,7 +23,10 @@ function mouseoverexamples(event){
   Pass in something from data.js
 */
 function loadData(data){
-
+  
+  /* Reset the links for each project */
+  clear_HTML_links();
+  
   /* Retrieve the project text */
   var projectText = document.getElementById("projectText");
 
@@ -66,6 +69,8 @@ function loadData(data){
     githubRepoImg.src = "";
   }
 
+  set_HTML_links(data);
+
   /* Display everything */
   displayButtons();
   displayProjectText();
@@ -80,6 +85,7 @@ function clearData(){
   hideButtons();
   hide_iframe();
   hideProjectTitle();
+  clear_HTML_links();
 }
 
 /*
@@ -193,4 +199,61 @@ function displayReturnButton(){
 */
 function hideReturnButton(){
   returnButton.style.display = "none";
+}
+
+/* 
+  Sets the innerHTML and href link for the current project
+*/
+function set_HTML_links(data){
+  /* Get the link elements */
+
+  var link1 = document.getElementById("link1");
+  var link2 = document.getElementById("link2");
+  var link3 = document.getElementById("link3");
+  var link4 = document.getElementById("link4");
+  var link5 = document.getElementById("link5");
+  var link6 = document.getElementById("link6");
+
+  link1.innerHTML = data.link1innerHTML;
+  link2.innerHTML = data.link2innerHTML;
+  link3.innerHTML = data.link3innerHTML;
+  link4.innerHTML = data.link4innerHTML;
+  link5.innerHTML = data.link5innerHTML;
+  if(data.link6innerHTML){
+    link6.innerHTML = data.link6innerHTML;
+  }
+  link1.href = data.link1;
+  link2.href = data.link2;
+  link3.href = data.link3;
+  link4.href = data.link4;
+  link5.href = data.link5;
+  if(data.link6){
+    link6.href = data.link6;
+  }
+}
+
+/*
+  Clear html links
+*/
+function clear_HTML_links(){
+
+  var link1 = document.getElementById("link1");
+  var link2 = document.getElementById("link2");
+  var link3 = document.getElementById("link3");
+  var link4 = document.getElementById("link4");
+  var link5 = document.getElementById("link5");
+
+  link1.innerHTML = "";
+  link2.innerHTML = "";
+  link3.innerHTML = "";
+  link4.innerHTML = "";
+  link5.innerHTML = "";
+  link6.innerHTML = "";
+
+  link1.href = "";
+  link2.href = "";
+  link3.href = "";
+  link4.href = "";
+  link5.href = "";
+  link6.href = "";
 }
