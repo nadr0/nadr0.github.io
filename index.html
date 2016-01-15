@@ -2,95 +2,104 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<script src="javascript.js"></script>
-		<script src="json.js"></script>
-		<script src="postjson.js"></script>
+		<script type="text/javascript" src="input.js"></script>
+		<script type="text/javascript" src="data.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="jquery.backstretch.min.js"></script>
-		<script src="three.min.js"></script>
-
-		<title></title>
 	</head>
 	<body>
-		<script>
-			$.backstretch("images/trianglify-background.svg");
-		</script>
 
-		
-		<div id="threejs"></div>
+	<div id="backgroundImageContainer"><img id="backgroundImage" src="images/background_code.png"></div>
 
-		<div id="leftlist">
-			<h1>Javascript</h1>
 
-			<div id="leftlistiems">	
-				<ul>
-					<li onclick="LoadiFrame(JSONObject.snow.src, JSONObject.snow.code, JSONObject.snow.info, JSONObject.snow.input,JSONObject.snow.link1,JSONObject.snow.link2,JSONObject.snow.link3,JSONObject.snow.link1innerHTML,JSONObject.snow.link2innerHTML,JSONObject.snow.link3innerHTML)">Weather / Snow </li>
-					<li onclick="LoadiFrame(JSONObject.leaf.src, JSONObject.leaf.code, JSONObject.leaf.info, JSONObject.leaf.input,JSONObject.leaf.link1,JSONObject.leaf.link2,JSONObject.leaf.link3,JSONObject.leaf.link1innerHTML,JSONObject.leaf.link2innerHTML,JSONObject.leaf.link3innerHTML)">Weather / Leaf </li>
-					<li onclick="LoadiFrame(JSONObject.paulbunyan.src,JSONObject.paulbunyan.code, JSONObject.paulbunyan.info, JSONObject.paulbunyan.input,JSONObject.paulbunyan.link1,JSONObject.paulbunyan.link2,JSONObject.paulbunyan.link3,JSONObject.paulbunyan.link1innerHTML,JSONObject.paulbunyan.link2innerHTML,JSONObject.paulbunyan.link3innerHTML)">Paul Bunyan </li>
-					<li onclick="LoadiFrame(JSONObject.bleuetrouge.src, null, JSONObject.bleuetrouge.info, JSONObject.bleuetrouge.input,JSONObject.bleuetrouge.link1,JSONObject.bleuetrouge.link2,JSONObject.bleuetrouge.link3,JSONObject.bleuetrouge.link1innerHTML,JSONObject.bleuetrouge.link2innerHTML,JSONObject.bleuetrouge.link3innerHTML)">Bleu Et Rouge </li>
-					<li onclick="LoadiFrame(JSONObject.astar.src, JSONObject.astar.code, JSONObject.astar.info, JSONObject.astar.input,JSONObject.astar.link1,JSONObject.astar.link2,JSONObject.astar.link3,JSONObject.astar.link1innerHTML,JSONObject.astar.link2innerHTML,JSONObject.astar.link3innerHTML)">A* </li>
-					<li onclick="LoadiFrame(JSONObject.gameboy.src, JSONObject.gameboy.code, JSONObject.gameboy.info, JSONObject.gameboy.input,JSONObject.gameboy.link1,JSONObject.gameboy.link2,JSONObject.gameboy.link3,JSONObject.gameboy.link1innerHTML,JSONObject.gameboy.link2innerHTML,JSONObject.gameboy.link3innerHTML)">GameBoy </li>
-					<li onclick="LoadiFrame(JSONObject.raycast.src, JSONObject.raycast.code, JSONObject.raycast.info, JSONObject.raycast.input,JSONObject.raycast.link1,JSONObject.raycast.link2,JSONObject.raycast.link3,JSONObject.raycast.link1innerHTML,JSONObject.raycast.link2innerHTML,JSONObject.raycast.link3innerHTML)">Raycast </li>		
-					<li onclick="LoadiFrame(JSONObject.dungeon.src,JSONObject.dungeon.code, JSONObject.dungeon.info, JSONObject.dungeon.input,null,null,null,null,null,null)">Random Dungeon</li>	
-					<li onclick="LoadiFrame(JSONObject.maze.src, JSONObject.maze.code, JSONObject.maze.info, JSONObject.maze.input,JSONObject.maze.link1,JSONObject.maze.link2,JSONObject.maze.link3,JSONObject.maze.link1innerHTML,JSONObject.maze.link2innerHTML,JSONObject.maze.link3innerHTML)">Maze </li>	
-					<li onclick="LoadiFrame(JSONObject.graph.src, JSONObject.graph.code, JSONObject.graph.info, JSONObject.graph.input,JSONObject.graph.link1,JSONObject.graph.link2,JSONObject.graph.link3,JSONObject.graph.link1innerHTML,JSONObject.graph.link2innerHTML,JSONObject.graph.link3innerHTML)">Graph </li>	
-					<li onclick="LoadiFrame(JSONObject.dither.src, JSONObject.dither.code, JSONObject.dither.info, JSONObject.dither.input,JSONObject.dither.link1,JSONObject.dither.link2,JSONObject.dither.link3,JSONObject.dither.link1innerHTML,JSONObject.dither.link2innerHTML,JSONObject.dither.link3innerHTML)">Dither </li>
-					<li onclick="LoadiFrame(JSONObject.lsystem.src, JSONObject.lsystem.code, JSONObject.lsystem.info, JSONObject.lsystem.input,JSONObject.lsystem.link1,JSONObject.lsystem.link2,JSONObject.lsystem.link3,JSONObject.lsystem.link1innerHTML,JSONObject.lsystem.link2innerHTML,JSONObject.lsystem.link3innerHTML)">L-System </li>
-					<li onclick="LoadiFrame(JSONObject.curve.src, JSONObject.curve.code, JSONObject.curve.info, JSONObject.curve.input,JSONObject.curve.link1,JSONObject.curve.link2,JSONObject.curve.link3,JSONObject.curve.link1innerHTML,JSONObject.curve.link2innerHTML,JSONObject.curve.link3innerHTML)">Bezier Curve </li>
-					<li onclick="LoadiFrame(JSONObject.quadtree.src, JSONObject.quadtree.code, JSONObject.quadtree.info, JSONObject.quadtree.input,JSONObject.quadtree.link1,JSONObject.quadtree.link2,JSONObject.quadtree.link3,JSONObject.quadtree.link1innerHTML,JSONObject.quadtree.link2innerHTML,JSONObject.quadtree.link3innerHTML)">Quadtree </li>
-					<li onclick="LoadiFrame(JSONObject.sob3l.src, JSONObject.sob3l.code, JSONObject.sob3l.info, JSONObject.sob3l.input,JSONObject.sob3l.link1,JSONObject.sob3l.link2,JSONObject.sob3l.link3,JSONObject.sob3l.link1innerHTML,JSONObject.sob3l.link2innerHTML,JSONObject.sob3l.link3innerHTML)">Sobel </li>
-					<li onclick="LoadiFrame(JSONObject.hough.src, JSONObject.hough.code, JSONObject.hough.info, JSONObject.hough.input,JSONObject.hough.link1,JSONObject.hough.link2,JSONObject.hough.link3,JSONObject.hough.link1innerHTML,JSONObject.hough.link2innerHTML,JSONObject.hough.link3innerHTML)">Hough </li>
-					<li onclick="LoadiFrame(JSONObject.turtle3d.src, JSONObject.turtle3d.code, JSONObject.turtle3d.info, JSONObject.turtle3d.input,JSONObject.turtle3d.link1,JSONObject.turtle3d.link2,JSONObject.turtle3d.link3,JSONObject.turtle3d.link1innerHTML,JSONObject.turtle3d.link2innerHTML,JSONObject.hough.link3innerHTML)">3D L-System </li>
-				</ul>
-			</div>
-			<!-- 
-			<h1> In Progress </h1>
-			<div id="leftlistiems">
-				<ul>
-					<li onclick="LoadiFrame(JSONObject.dungeon.src,JSONObject.dungeon.code, JSONObject.dungeon.info, JSONObject.dungeon.input,null,null,null,null,null,null)">Dungeon</li>
-				</ul>
-			</div>	 -->
+	<!-- HEADER CONTENT -->
+	<div id="headerInfo" class="NO_SELECT">
+		<div id="myName">Kevin Nadro</div>	
 
-			<h1> Blog </h1>
-			<div id="leftlistiems">
-				<ul>
-					<li onclick="LoadiFrame(JSONObject2.randomdungeon.src, JSONObject2.randomdungeon.code, null, null,null,null,null,null,null,null)">Random Dungeon</li>
-					<li onclick="LoadiFrame(JSONObject2.dungeontypes.src, JSONObject2.dungeontypes.code, null, null,null,null,null,null,null,null)">Dungeon Types</li>
-				</ul>
-			</div>	
-			<div id="buttons">
-				<button id="clear" class="CSSTransition" onclick="cleariframe(this)">CLEAR</button>
-				<button id="hide" class="CSSTransition" onclick="hidesidebar()">HIDE</button>
-				<a id="sourcecodelink" target="_blank"> <button id="sourcecode" class="CSSTransition"> CODE</button> </a>
-			</div>
-			<p id="exampleinfo"></p>
-			<p id="examplecontrols"></p>
-			<!-- 3 Links if the examples need to link another site -->
-			<!-- Better way of doing this? -->
-			<div class="divider"></div>
-			<div id="linkHolder">
-				<a id="link1" class="link" href="" target="_blank"></a>
-				<a id="link2" class="link" href="" target="_blank"></a>
-				<a id="link3" class="link" href="" target="_blank"></a>
-			</div>
-			<div id="information">
-				<p class="info">Kevin Nadro</p>
-				<p class="info">I like math and programming.</p>
-				<p class="info">sodapopcuffgames@gmail.com</p>
-				<a id="githublink" href="https://github.com/nadr0" target="_blank"><img src="images/Octocat.png" style="width:80px;height:66.5px"></a>
+		<div class="headerImageContainer">
+			<div id="githubImage">
+				<a id="githublink" href="https://github.com/nadr0" target="_blank"><img src="images/Github_Logo.png" style="width:166px;height:68.3px"></a>
 			</div>
 
-		 </div>
+			<div id="uiucImage">
+				<a  href="http://cs.illinois.edu/" target="_blank"><img src="images/black50.gif" style=""></a>
+				<div id="csIllinois">CS @ ILLINOIS Computer Science</div>
+			</div>
+		</div>
+	</div>
 
-		 <div id="returnleftlist"> 		
-		 	<button id="return" class="CSSTransition" onclick="resetsidebar()">RETURN</button>
+	<div id="frameContainer">
+		<iframe id="project_iframe" src=""></iframe>
+		<button class="pButtons NO_SELECT" id="returnButton" onclick="hide_iframe()">RETURN</button>
+	</div>
+
+	<!-- PROJECT CONTENT -->
+	<div id="projectContent">
+
+		<div id="projectNames" class="NO_SELECT">
+			<ul>
+				<li onclick="loadData(data.snow)">Weather / Snow</li>
+				<li onclick="loadData(data.leaf)">Weather / Leaf</li>
+				<li onclick="loadData(data.paulbunyan)">Paul Bunyan</li>
+				<li onclick="loadData(data.bleuetrouge)">Bleu Et Rouge</li>
+				<li onclick="loadData(data.astar)">A*</li>
+				<li onclick="loadData(data.gameboy)">GameBoy</li>
+				<li onclick="loadData(data.raycast)">Raycast</li>
+				<li onclick="loadData(data.dungeon)">Random Dungeon</li>
+				<li onclick="loadData(data.maze)">Maze</li>
+				<li onclick="loadData(data.graph)">Graph</li>
+				<li onclick="loadData(data.dither)">Dither</li>
+				<li onclick="loadData(data.lsystem)">L-System</li>
+				<li onclick="loadData(data.curve)">Bezier Curve</li>
+				<li onclick="loadData(data.turtle3d)">3D L-System</li>
+				<li onclick="loadData(data.cs445)">CS 445 @ UIUC</li>
+				<li onclick="loadData(data.btree)">btree</li>
+				<li onclick="loadData(data.receiptparser)">receipt parser</li>
+			</ul>
 		</div>
 
-		 <script>
-		 mouseoverexamples(event);
-		 </script>
+		<div id="projectInfo">
+			<div id="projectName" class="NO_SELECT">About</div>
+			<div id="projectText" class="NO_SELECT">I am a senior at University of Illinois Urbana-Champaign. I study computer science with an emphasis in computer graphics & vision. I tend to write all my personal projects in javascript because of the portability and ease. Check out my projects and click CANVAS to try them out.</div>
 
-		<div id="iframe"> <iframe id="frame" width="100%" height="100%" src="" scrolling="yes"></iframe>	</div>
+			<div id="projectControls"></div>
+
+			<div id="linkContainer">
+				<div id="link1Container" class="links"><a id="link1" class="link" href="" target="_blank"></a></div>
+				<div id="link2Container" class="links"><a id="link2" class="link" href="" target="_blank"></a></div>
+				<div id="link3Container" class="links"><a id="link3" class="link" href="" target="_blank"></a></div>
+				<div id="link4Container" class="links"><a id="link4" class="link" href="" target="_blank"></a></div>
+				<div id="link5Container" class="links"><a id="link5" class="link" href="" target="_blank"></a></div>
+				<div id="link6Container" class="links"><a id="link6" class="link" href="" target="_blank"></a></div>
+			</div>
+		</div>
+		<div id="projectButtons">
+			<button class="pButtons NO_SELECT" id="canvasButton">CANVAS</button>
+			<button class="pButtons NO_SELECT" id="codeButton"><a id="githublinkButton" href="https://github.com/nadr0" target="_blank"><img id="githublinkImg" src="images/GitHub-Mark-32px.png"></img></a></button>
+			<button class="pButtons NO_SELECT" id="clearcodeButton" onclick="clearData()">CLEAR</button>
+		</div>
+
+	</div>
+
+	<script>
+		/* Mouse over events for li elements (the project names)*/
+		mouseoverexamples(event);
+
+		/* canvas button */
+		var canvasButton = document.getElementById("canvasButton");
+
+		/* github button*/
+		var githubButton = document.getElementById("codeButton");
+
+		/* clear button */
+		var clearButton = document.getElementById("clearcodeButton");
+
+		/* return button */
+		var returnButton = document.getElementById("returnButton");
+
+		hideButtons();
+	</script>
+
 
 	</body>
 </html>
