@@ -41,6 +41,15 @@ function loadData(data){
   /* Get canvas button */
   var canvasButton = document.getElementById("canvasButton");
 
+  /* Get project controls*/
+  var projectControls = document.getElementById("projectControls");
+
+  if(data.input){
+    projectControls.innerHTML = data.input;
+  }else{
+    projectControls.innerHTML = "";
+  }
+
   /* Set the onlick event*/
   if(data.src){
     /* Show that there is a canvas element to display*/
@@ -75,6 +84,7 @@ function loadData(data){
   displayButtons();
   displayProjectText();
   displayProjectTitle();
+  displayControls();
 }
 
 /* 
@@ -84,6 +94,7 @@ function clearData(){
   hideProjectText();
   hideButtons();
   hide_iframe();
+  hideControls();
   hideProjectTitle();
   clear_HTML_links();
 }
@@ -99,7 +110,8 @@ function displayProjectTitle(){
 /* Hide project title*/
 function hideProjectTitle(){
   var projectTitle = document.getElementById("projectName");
-  projectTitle.style.display = "none";
+  // projectTitle.style.display = "none";
+  projectTitle.innerHTML = "About";
 }
 
 /* 
@@ -115,7 +127,7 @@ function displayProjectText(){
 */
 function hideProjectText(){
   var projectText = document.getElementById("projectText");
-  projectText.style.display = "none";
+  projectText.innerHTML = "I am a senior at University of Illinois Urbana-Champaign. I study computer science with an emphasis in computer graphics & vision. I tend to write all my personal projects in javascript because of the portability and ease. Check out my projects and click CANVAS to try them out.";
 }
 
 /* 
@@ -175,7 +187,7 @@ function hide_iframe(){
   Display controls
 */
 function displayControls(){
-  var projectControls = document.getElementById("project_controls");
+  var projectControls = document.getElementById("projectControls");
   projectControls.style.display = "inline";
 }
 
@@ -183,7 +195,7 @@ function displayControls(){
   Hide controls
 */
 function hideControls(){
-  var projectControls = document.getElementById("project_controls");
+  var projectControls = document.getElementById("projectControls");
   projectControls.style.display = "none";
 }
 

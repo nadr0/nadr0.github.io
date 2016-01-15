@@ -2,11 +2,11 @@
 .NO_SELECT{
 	background-repeat: no-repeat;
 	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    	-webkit-user-select: none;
+    	-khtml-user-select: none;
+    	-moz-user-select: none;
+    	-ms-user-select: none;
+    	user-select: none;
 }
 
 #backgroundImageContainer{
@@ -16,8 +16,8 @@
 	margin: 0;
 	padding: 0;
 	z-index: 0;
-    -webkit-filter: blur(2px);
-    overflow: scroll;
+    	-webkit-filter: blur(2px);
+    	overflow: scroll;
 }
 #backgroundImage{
 	height: 1402.5px;
@@ -108,14 +108,10 @@ body::-webkit-scrollbar {
 	text-decoration: none;
 }
 #projectText{
-	left: 10%;
 	position: relative;
 	display: inline;
-	/*transform: translateY(-50%);*/
 	top: 125px;
-	width: 80%;
 	height: auto;
-	/*background-color: rgba(243, 156, 18,0.2);*/
 	font-family: Inconsolata;	
 }
 #projectName{
@@ -128,7 +124,11 @@ body::-webkit-scrollbar {
 	height: 50px;
 	padding-top: 0.5em;
 	text-align: center;
-	display: none;
+}
+#projectControls{
+	position: relative;
+	font-family: Inconsolata;
+	top: 150px;
 }
 #projectButtons{
 	position: absolute;

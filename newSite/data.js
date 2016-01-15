@@ -239,7 +239,7 @@ var data = {
 	},
 	"cs445":{
 		"src":"",
-		"code":"",
+		"code":"https://github.com/nadr0/GrabCut",
 		"info":"I took CS 445: Computational Photography (Fall 2015) @ UIUC with Derek Hoiem. Currently my most favorite course taken at UIUC (thanks Derek). Here is a list of the projects I completed in this course.",		
 		"title":"CS 445: Computational Photography",
 		"link1":"http://web.engr.illinois.edu/~nadro2/cs445/proj1/",
@@ -271,9 +271,23 @@ var data = {
 		"link4innerHTML":"",
 		"link5innerHTML":"",
 
-	}
-
-	// https://courses.engr.illinois.edu/cs445/
+	},
+	"receiptparser":{
+		"src":"",
+		"code":"https://github.com/nadr0/receipt-parser",
+		"info":"I wrote some C code that parses meijer PDF receipts into CSV files to get the grocery items.",		
+		"title":"receipt parser",
+		"link1":"",
+		"link2":"",
+		"link3":"",
+		"link4":"",
+		"link5":"",
+		"link1innerHTML":"",
+		"link2innerHTML":"",
+		"link3innerHTML":"",
+		"link4innerHTML":"",
+		"link5innerHTML":"",
+	},
 
 
 
