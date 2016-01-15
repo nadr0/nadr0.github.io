@@ -188,7 +188,7 @@ function hide_iframe(){
 */
 function displayControls(){
   var projectControls = document.getElementById("projectControls");
-  projectControls.style.display = "inline";
+  projectControls.style.display = "";
 }
 
 /* 
