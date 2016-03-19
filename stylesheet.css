@@ -42,6 +42,11 @@ body::-webkit-scrollbar {
 	position: relative;
 	margin-top: 35px;
 }
+#codepenimage{
+	position: relative;
+	display: inline-block;
+	left: 185px;
+}
 #uiucImage{
 	position: relative;
 	display: inline-block;
