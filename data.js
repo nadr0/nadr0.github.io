@@ -32,7 +32,7 @@ var data = {
 		"link4innerHTML":"",
 		"link5innerHTML":"",
 		"title":"leaf",
-	}, 
+	},
 	"paulbunyan":{
 		"src":"http://www.whaleblubber.net/Kevin/html/paulbunyan/",
 		"code":"https://github.com/Levo/Pixi-Js/tree/master/Paul",
@@ -240,7 +240,7 @@ var data = {
 	"cs445":{
 		"src":"",
 		"code":"https://github.com/nadr0/GrabCut",
-		"info":"I took CS 445: Computational Photography (Fall 2015) @ UIUC with Derek Hoiem. Currently my most favorite course taken at UIUC (thanks Derek). Here is a list of the projects I completed in this course.",		
+		"info":"I took CS 445: Computational Photography (Fall 2015) @ UIUC with Derek Hoiem. Currently my most favorite course taken at UIUC (thanks Derek). Here is a list of the projects I completed in this course.",
 		"title":"CS 445: Computational Photography",
 		"link1":"http://web.engr.illinois.edu/~nadro2/cs445/proj1/",
 		"link2":"http://web.engr.illinois.edu/~nadro2/cs445/proj2/",
@@ -258,8 +258,8 @@ var data = {
 	"btree":{
 		"src":"http://kevinnadro.me/btree/",
 		"code":"https://github.com/nadr0/btree",
-		"info":"Btree applet",		
-		"title":"btree",		
+		"info":"Btree applet",
+		"title":"btree",
 		"link1":"",
 		"link2":"",
 		"link3":"",
@@ -275,7 +275,7 @@ var data = {
 	"receiptparser":{
 		"src":"",
 		"code":"https://github.com/nadr0/receipt-parser",
-		"info":"I wrote some C code that parses meijer PDF receipts into CSV files to get the grocery items.",		
+		"info":"I wrote some C code that parses meijer PDF receipts into CSV files to get the grocery items.",
 		"title":"receipt parser",
 		"link1":"",
 		"link2":"",
