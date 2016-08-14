@@ -23,8 +23,8 @@
 	height: 1402.5px;
 	width: 1317px;
 }
-body::-webkit-scrollbar { 
-    display: none; 
+body::-webkit-scrollbar {
+    display: none;
 }
 #headerInfo{
 	position: relative;
@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 	height: 350px;
 	top: 50px;
 	display: inline-block;
-	overflow: scroll;	
+	overflow: scroll;
 	/*background-color: rgba(26, 188, 156, 0.2);	*/
 }
 #linkContainer{
@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
 .links{
 	position: relative;
 	display: block;
-	
+
 }
 .link{
 	font-family: Inconsolata;
@@ -121,7 +121,7 @@ body::-webkit-scrollbar {
 	display: inline;
 	top: 125px;
 	height: auto;
-	font-family: Inconsolata;	
+	font-family: Inconsolata;
 }
 #projectName{
 	position: absolute;
@@ -204,7 +204,7 @@ ul{
 }
 #frameContainer{
 	z-index: 1;
-	position: absolute;	
+	position: absolute;
 	padding: 0;
 	margin: 0;
 	top: 0;
