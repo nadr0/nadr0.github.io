@@ -30,42 +30,84 @@
 	</div>
 
 
-	<div class="row">
+	<div class="row _1">
 		<div class="box" id="project-raytracer"><div class="inside-box">Ray Tracer</div></div>
 		<div class="box" id="project-grabcut"><div class="inside-box">GrabCut</div></div>
 		<div class="box" id="project-algorithm"><div class="inside-box">AlgorithmVisualizer</div></div>
 	</div>
 
-	<div class="row">
+	<div class="row content _1">
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+	<div class="row _2">
 		<div class="box" id="project-bleuetrouge"><div class="inside-box">Bleu et Rouge</div></div>
 		<div class="box" id="project-paul"><div class="inside-box">Paul Bunyan</div></div>
 		<div class="box" id="project-gameboy"><div class="inside-box">Gameboy</div></div>
 	</div>
 
-	<div class="row">
+
+	<div class="row content _2">
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+
+	<div class="row _3">
 		<div class="box" id="project-astar"><div class="inside-box">A*</div></div>
 		<div class="box" id="project-graph"><div class="inside-box">Graph</div></div>
 		<div class="box" id="project-maze" ><div class="inside-box">Maze</div></div>
 	</div>
 
-	<div class="row">
+	<div class="row content _3">
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+
+	<div class="row _4">
 		<div class="box" id="project-bezier"><div class="inside-box">Bezier Curve</div></div>
 		<div class="box" id="project-lsystem"><div class="inside-box">L-System</div></div>
 		<div class="box" id="project-3dlsystem"><div class="inside-box">3D L-System</div></div>
 	</div>
 
-	<div class="row">
+	<div class="row content _4"/>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+
+	<div class="row _5">
 		<div class="box" id="project-raycast"><div class="inside-box">Raycast</div></div>
 		<div class="box" id="project-random-dungeon"><div class="inside-box">Random Dungeon</div></div>
 		<div class="box" id="project-btree"><div class="inside-box">Btree</div></div>
 	</div>
 
-	<div class="row">
+	<div class="row content _5">
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+
+	<div class="row _6">
 		<div class="box" id="project-dither"><div class="inside-box">Dither</div></div>
 		<div class="box" id="project-receipt"><div class="inside-box">Receipt Parser</div></div>
 		<div class="box" id="project-cs445"><div class="inside-box">CS 445</div></div>
 	</div>
 
+	<div class="row content _6">
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+		<div class="box blank"></div>
+	</div>
+
+
 	<div class="row">
 		<div class="box blank"></div>
 		<div class="box blank"></div>
@@ -74,14 +116,12 @@
 
 </div>
 
-<div id='overlay-container'>
-	<div id="close-box">X</div>
+	<!-- <div id="close-box">X</div>
 	<iframe id="iframe" src=""></iframe>
 	<div id="description"></div>
-	<div id="controls"></div>
-	<div id="links"></div>
-	<a id="code" href="https://github.com/nadr0" target="_blank"><img 	id="github-image"src="Github-Mark-64px.png"></a>
-</div>
+	<div class="overlay-containers"id="controls"></div>
+	<div class="overlay-containers"id="links"></div> -->
+	<!-- <a id="code" href="https://github.com/nadr0" target="_blank"><img 	id="github-image"src="Github-Mark-64px.png"></a> -->
 
 </body>
 
@@ -92,34 +132,30 @@
 	////////////////////////////////////////////////////////
 
 	var projects = document.querySelectorAll('.inside-box');
-	var overlayContainer = document.getElementById('overlay-container');
 
 	// Init box click events
 	for (var i = 0; i < projects.length; i++) {
 		(function(){
 			var projectElement = projects[i];
 			projectElement.addEventListener('click', function(){
-				overlayContainer.style.display = 'block';
-				populateProject(projectElement.parentElement.id);
+				populateProject(projectElement.parentElement.id,projectElement.parentElement.parentElement.classList);
 			})
 		}());
 
 	}
 
 	// Init close box on overlay
-	var closeBox = document.getElementById('close-box');
-	closeBox.addEventListener('click',function(){
-		overlayContainer.style.display = 'none';
-		clearProject();
-	});
-
-	// Can close the overlay container with pressing 'escape' character
-	body.addEventListener('keydown',function(key){
-		if(key.code === "Escape" && overlayContainer.style.display === 'block'){
-			overlayContainer.style.display = 'none';
-			clearProject();
-		}
-	});
+	// var closeBox = document.getElementById('close-box');
+	// closeBox.addEventListener('click',function(){
+	// 	clearProject();
+	// });
+	//
+	// // Can close the overlay container with pressing 'escape' character
+	// body.addEventListener('keydown',function(key){
+	// 	if(key.code === "Escape" && overlayContainer.style.display === 'block'){
+	// 		clearProject();
+	// 	}
+	// });
 
 
 </script>

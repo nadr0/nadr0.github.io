@@ -19,39 +19,40 @@ function clearProject(){
 
 }
 
-function populateProject(projectName){
-    clearProject();
+function populateProject(projectName, contentClassName){
+    // clearProject();
 
     var projectData = siteData[projectName];
     var controls = document.getElementById('controls');
     var links = document.getElementById('links');
     var description = document.getElementById('description');
 
-    updateIframe(projectData.src);
-    updateGithub(projectData.code);
+    var contentRow = document.querySelector('.row.content.' + contentClassName[1]);
+    console.log(contentRow);
 
-    // Set description
-    description.innerHTML = projectData.description;
 
-    // Set iframe
-    iframe.src = projectData.src;
-
-    // Populate links
-    for(link in projectData.links){
-        var linkElement = document.createElement('a');
-        linkElement.classList.add('overlay-rows');
-        linkElement.innerHTML = link;
-        linkElement.href = projectData.links[link];
-        links.appendChild(linkElement);
-    }
-
-    // Populate controls
-    for(control in projectData.controls){
-        var controlElement = document.createElement('div');
-        controlElement.classList.add('overlay-rows');
-        controlElement.innerHTML = control + " : " + projectData.controls[control];
-        controls.appendChild(controlElement);
-    }
+    // // updateIframe(projectData.src);
+    // updateGithub(projectData.code);
+    //
+    // // Set description
+    // description.innerHTML = projectData.description;
+    //
+    // // Populate links
+    // for(link in projectData.links){
+    //     var linkElement = document.createElement('a');
+    //     linkElement.classList.add('overlay-rows');
+    //     linkElement.innerHTML = link;
+    //     linkElement.href = projectData.links[link];
+    //     links.appendChild(linkElement);
+    // }
+    //
+    // // Populate controls
+    // for(control in projectData.controls){
+    //     var controlElement = document.createElement('div');
+    //     controlElement.classList.add('overlay-rows');
+    //     controlElement.innerHTML = control + " : " + projectData.controls[control];
+    //     controls.appendChild(controlElement);
+    // }
 
 }
 

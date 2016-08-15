@@ -12,6 +12,10 @@
     background-color: rgb(236, 240, 241);
 }
 
+.blur-content {
+    -webkit-filter: blur(5px);
+}
+
 .name-plate {
     position: relative;
     left: 100px;
@@ -114,7 +118,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(64,64,64,0.6);
+    background: rgba(64,64,64,0.2);
     top: 0px;
     padding-top: 2.5%;
     display: none;
@@ -224,6 +228,7 @@
     height: 55%;
     left: 10%;
     position: relative;
+    display: none;
 }
 
 #code {
@@ -232,21 +237,31 @@
 }
 
 #description {
+    width: 35%;
+    left: 10%;
     text-align: center;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+}
+
+.overlay-containers{
+    top: 25%;
+    width: 250px;
+    text-align: center;
+    position: absolute;
     height: auto;
     background-color: white;
+    left: 50%;
 }
 
 #links {
-    text-align: center;
-    height: auto;
-    background-color: white;
+
 }
 
 #controls {
-    text-align: center;
-    height: auto;
-    background-color: white;
+
 }
 
 .overlay-rows{
@@ -256,4 +271,8 @@
 
 #DAQRI {
     color: blue;
+}
+
+.content {
+    display: none;
 }
