@@ -109,8 +109,8 @@
 }
 
 .box.blank {
-    height: 25px;
-    opacity: 0.0;
+    /*opacity: 0.0;*/
+    border: none;
 }
 
 #overlay-container {
@@ -274,5 +274,26 @@
 }
 
 .content {
-    display: none;
+    height: 0px;
+    border: none;
+    -webkit-transition: height 225ms linear;
+    -moz-transition: height 225ms linear;
+    -o-transition: height 225ms linear;
+    -ms-transition: height 225ms linear;
+    transition: height 225ms linear;
+}
+
+.content.show {
+    border: 1px solid black;
+    height: 300px;
+    -webkit-transition: height 225ms linear;
+    -moz-transition: height 225ms linear;
+    -o-transition: height 225ms linear;
+    -ms-transition: height 225ms linear;
+    transition: height 225ms linear;
+}
+
+.text {
+    position: absolute;
+    text-align: left;
 }

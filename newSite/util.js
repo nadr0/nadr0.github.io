@@ -1,12 +1,13 @@
-function clearProject(){
-    var iframe = document.getElementById('iframe');
-    var code = document.getElementById('code');
-    var controls = document.getElementById('controls');
-    var links = document.getElementById('links');
-    var description = document.getElementById('description');
+function clearProject(childDivs){
+    // var iframe = document.getElementById('iframe');
+    // var code = document.getElementById('code');
 
-    iframe.src = "";
-    code.href = "";
+    var description = childDivs[0];
+    var links = childDivs[1];
+    var controls = childDivs[2];
+
+    // iframe.src = "";
+    // code.href = "";
     description.innerHTML = "";
 
     while(controls.childNodes.length){
@@ -20,40 +21,62 @@ function clearProject(){
 }
 
 function populateProject(projectName, contentClassName){
-    // clearProject();
+    clearSelection();
 
     var projectData = siteData[projectName];
-    var controls = document.getElementById('controls');
-    var links = document.getElementById('links');
-    var description = document.getElementById('description');
 
     var contentRow = document.querySelector('.row.content.' + contentClassName[1]);
-    console.log(contentRow);
+    showElem(contentRow);
+
+    var childDivs = contentRow.getElementsByClassName('text');
+
+    var links = childDivs[1];
+    var controls = childDivs[2];
+
+    clearProject(childDivs);
+
+    // Set description
+    childDivs[0].innerHTML = projectData.description;
 
 
     // // updateIframe(projectData.src);
     // updateGithub(projectData.code);
-    //
-    // // Set description
-    // description.innerHTML = projectData.description;
-    //
-    // // Populate links
-    // for(link in projectData.links){
-    //     var linkElement = document.createElement('a');
-    //     linkElement.classList.add('overlay-rows');
-    //     linkElement.innerHTML = link;
-    //     linkElement.href = projectData.links[link];
-    //     links.appendChild(linkElement);
-    // }
-    //
-    // // Populate controls
-    // for(control in projectData.controls){
-    //     var controlElement = document.createElement('div');
-    //     controlElement.classList.add('overlay-rows');
-    //     controlElement.innerHTML = control + " : " + projectData.controls[control];
-    //     controls.appendChild(controlElement);
-    // }
 
+    // // Populate links
+    for(link in projectData.links){
+        var linkElement = document.createElement('a');
+        linkElement.classList.add('overlay-rows');
+        linkElement.innerHTML = link;
+        linkElement.href = projectData.links[link];
+        links.appendChild(linkElement);
+    }
+
+    // Populate controls
+    for(control in projectData.controls){
+        var controlElement = document.createElement('div');
+        controlElement.classList.add('overlay-rows');
+        controlElement.innerHTML = control + " : " + projectData.controls[control];
+        controls.appendChild(controlElement);
+    }
+
+}
+
+function showElem(elem){
+    elem.classList.add('show');
+}
+
+function unshowElem(elem){
+    elem.classList.remove('show');
+}
+
+function clearSelection(){
+    var elems = document.getElementsByClassName('show');
+    for (var i = 0; i < elems.length; i++) {
+        var childDivs = elems[i].getElementsByClassName('text');
+        clearProject(childDivs);
+        elems[i].classList.remove('show');
+
+    }
 }
 
 function displayCheck(elem,data,onDisplay,type){
