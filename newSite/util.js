@@ -19,9 +19,17 @@ function clearProject(childDivs){
 }
 
 function populateProject(projectName, contentClassName){
-    clearSelection();
-
     var projectData = siteData[projectName];
+
+    var sameElement = document.querySelector('.row.content.' + contentClassName[1]+".show");
+    if(sameElement){
+        if(projectData.title === sameElement.querySelector('.project-title').innerHTML){
+            clearSelection();
+            return;
+        }
+    }
+
+    clearSelection();
 
     var contentRow = document.querySelector('.row.content.' + contentClassName[1]);
     showElem(contentRow);
