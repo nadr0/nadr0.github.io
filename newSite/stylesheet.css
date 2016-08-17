@@ -20,6 +20,7 @@
     position: relative;
     left: 100px;
     top: 15px;
+    font-size: 40px;
 }
 
 .header-image {
@@ -29,13 +30,13 @@
 #github-image-container {
     position: absolute;
     display: block;
-    left: 80%;
+    left: 78%;
     top: 17px;
 }
 
 #github-image {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
 }
 
 #linkedin-image-container {
@@ -46,8 +47,7 @@
 }
 
 #linkedin-image {
-    width: 39;
-    height: 33px;
+
 }
 
 #contentContainer {
@@ -75,7 +75,6 @@
     vertical-align: middle;
     line-height: 250px;
     font-family: 'Oswald', sans-serif;
-
 }
 
 .inside-box:hover {
@@ -276,6 +275,7 @@
 .content {
     height: 0px;
     border: none;
+    font-size: 20px;
     -webkit-transition: height 225ms linear;
     -moz-transition: height 225ms linear;
     -o-transition: height 225ms linear;
@@ -296,4 +296,24 @@
 .text {
     position: absolute;
     text-align: left;
+}
+
+.project-title {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.project-github {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.project-github-image {
+    width: 32px !important;
+    height: 32px !important;
 }

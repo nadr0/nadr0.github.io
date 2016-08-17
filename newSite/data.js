@@ -9,7 +9,8 @@ var siteData = {
         },
         "links":{
             "itch.io":"http://itch.io/jam/the-public-domain-jam"
-        }
+        },
+        "title":"Paul Bunyan"
     },
     "project-bleuetrouge":{
         "src":"http://www.whaleblubber.net/Kevin/html/bleuetrouge",
@@ -22,40 +23,47 @@ var siteData = {
             "waubonsee article":"http://www.waubonsee.edu/news/archive/2014/20140620VideoGameDesignContestNadro.php",
             "winners":"http://clay.io/blog/announcing-the-got-game-2014-winners/",
             "competition details":"ttp://clay.io/gotgame",
-        }
+        },
+        "title":"Bleu et Rouge"
     },
     "project-random-dungeon":{
-        "src":"",
+        "src":"http://www.whaleblubber.net/Kevin/html/totych",
         "code":"",
-        "description":"",
+        "description":"I used imapactJS to implement the random dungeon generator.",
         "controls":{
-
+            "movement":"WASD",
         },
         "links":{
 
-        }
+        },
+        "title":"Random Dungeon"
     },
     "project-astar":{
-        "src":"",
-        "code":"",
-        "description":"",
+        "src":"http://cranberrycinnamon.com/Kevin/WEB/A*/astar.html",
+        "code":"https://github.com/Levo/A-Star",
+        "description":"I created this A* pathfinding program to show it implemented in javascript.",
         "controls":{
-
+            "click":"places walls & nodes",
+            "enter":"to continue"
         },
         "links":{
 
-        }
+        },
+        "title":"A*"
     },
     "project-gameboy":{
-        "src":"",
+        "src":"http://cranberrycinnamon.com/Kevin/WEB/gameboy",
         "code":"",
-        "description":"",
+        "description":"This game was created for a gameboy game jam on game jolt. The objective is to collect the 5 coins on each level.",
         "controls":{
-
+            "move":"WASD",
+            "fire":"left mouse",
+            "siwtch weapons":"Q"
         },
         "links":{
-
-        }
+            "Game Jolt":"http://jams.gamejolt.io/gbjam3"
+        },
+        "title":"Gameboy"
     },
     "project-raycast":{
         "src":"",

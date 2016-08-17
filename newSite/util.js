@@ -1,13 +1,11 @@
 function clearProject(childDivs){
     // var iframe = document.getElementById('iframe');
-    // var code = document.getElementById('code');
 
     var description = childDivs[0];
     var links = childDivs[1];
     var controls = childDivs[2];
 
     // iframe.src = "";
-    // code.href = "";
     description.innerHTML = "";
 
     while(controls.childNodes.length){
@@ -29,6 +27,7 @@ function populateProject(projectName, contentClassName){
     showElem(contentRow);
 
     var childDivs = contentRow.getElementsByClassName('text');
+    var projectTitle = contentRow.querySelector('.project-title');
 
     var links = childDivs[1];
     var controls = childDivs[2];
@@ -39,8 +38,11 @@ function populateProject(projectName, contentClassName){
     childDivs[0].innerHTML = projectData.description;
 
 
+    // Set title
+    projectTitle.innerHTML = projectData.title;
+
     // // updateIframe(projectData.src);
-    // updateGithub(projectData.code);
+    updateGithub(projectData.code, contentRow);
 
     // // Populate links
     for(link in projectData.links){
@@ -72,6 +74,12 @@ function unshowElem(elem){
 function clearSelection(){
     var elems = document.getElementsByClassName('show');
     for (var i = 0; i < elems.length; i++) {
+        var code = elems[i].querySelector('.project-github');
+        code.href = '';
+        code.style.display = 'none';
+        var projectTitle = elems[i].querySelector('.project-title');
+        projectTitle.innerHTML = '';
+
         var childDivs = elems[i].getElementsByClassName('text');
         clearProject(childDivs);
         elems[i].classList.remove('show');
@@ -98,8 +106,9 @@ function updateIframe(data){
         }, 'block');
 }
 
-function updateGithub(data){
-    var code = document.getElementById('code');
+function updateGithub(data, contentRow){
+    var code = contentRow.querySelector('.project-github');
+
 
     displayCheck(code, data,
         function(){
