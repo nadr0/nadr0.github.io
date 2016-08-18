@@ -49,8 +49,9 @@ function populateProject(projectName, contentClassName){
     // Set title
     projectTitle.innerHTML = projectData.title;
 
-    // // updateIframe(projectData.src);
     updateGithub(projectData.code, contentRow);
+
+    updatePlayButton(projectData.src, contentRow);
 
     // // Populate links
     for(link in projectData.links){
@@ -96,7 +97,6 @@ function clearSelection(){
 }
 
 function displayCheck(elem,data,onDisplay,type){
-
     if(data === ""){
         elem.style.display = 'none';
     }else{
@@ -117,9 +117,24 @@ function updateIframe(data){
 function updateGithub(data, contentRow){
     var code = contentRow.querySelector('.project-github');
 
-
     displayCheck(code, data,
         function(){
             code.href = data
-        }, 'block');
+        }, 'inline-block');
+}
+
+function updatePlayButton(data, contentRow){
+    var container = contentRow.querySelector('.project-demo');
+
+    // Removes all event listeners
+    var containerClone = container.cloneNode(true);
+    container.parentNode.replaceChild(containerClone, container);
+    containerClone.style.display = 'inline-block';
+
+    displayCheck(containerClone, data,
+        function(){
+            containerClone.addEventListener('click',function(){
+                console.log(data);
+            })
+        }, 'inline-block');
 }

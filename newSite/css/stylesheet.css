@@ -139,61 +139,61 @@
 }
 
 #project-bleuetrouge {
-    background-image: url("bleuetrouge.png");
+    background-image: url("../images/bleuetrouge.png");
 }
 
 #project-paul {
-    background-image: url("paul.png");
+    background-image: url("../images/paul.png");
 }
 
 #project-gameboy {
-    background-image: url("gameboy.png");
+    background-image: url("../images/gameboy.png");
 }
 
 #project-astar {
-    background-image: url("astar.png");
+    background-image: url("../images/astar.png");
 }
 
 #project-graph {
-    background-image: url("graph.png");
+    background-image: url("../images/graph.png");
 }
 
 #project-maze {
-    background-image: url("maze.png");
+    background-image: url("../images/maze.png");
 }
 
 #project-bezier {
-    background-image: url("bezier.png");
+    background-image: url("../images/bezier.png");
 }
 
 #project-lsystem {
-    background-image: url("lsystem.png");
+    background-image: url("../images/lsystem.png");
 }
 
 #project-3dlsystem {
-    background-image: url("3dlsystem.png");
+    background-image: url("../images/3dlsystem.png");
 }
 
 #project-raycast {
-    background-image: url("raycast.png");
+    background-image: url("../images/raycast.png");
     background-size:contain;
 }
 
 #project-random-dungeon {
-    background-image: url("random-dungeon.png");
+    background-image: url("../images/random-dungeon.png");
 }
 
 #project-btree {
-    background-image: url("btree.png");
+    background-image: url("../images/btree.png");
 }
 
 #project-raytracer {
-    background-image: url("raytracer.png");
+    background-image: url("../images/raytracer.png");
     background-size:contain;
 }
 
 #project-grabcut {
-    background-image: url("final_flower.png");
+    background-image: url("../images/final_flower.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -201,24 +201,24 @@
 }
 
 #project-algorithm {
-    background-image: url("algorithm.png");
+    background-image: url("../images/algorithm.png");
     background-size:cover;
     background-repeat: no-repeat;
 }
 
 #project-receipt {
-    background-image: url("receipt.png");
+    background-image: url("../images/receipt.png");
 }
 
 #project-dither {
-    background-image: url("dither2.png");
+    background-image: url("../images/dither2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
 }
 
 #project-cs445 {
-    background-image: url("texture_transfer.jpg");
+    background-image: url("../images/texture_transfer.jpg");
     background-position: center;
 }
 
@@ -307,10 +307,21 @@
 }
 
 .project-github {
-    width: auto;
+    width: 32px;
     margin: 0 auto;
     position: relative;
     display: none;
+}
+
+.project-demo {
+    display: none;
+    border: 1px solid black;
+    width: 128px;
+    margin: 0 auto;
+}
+
+.play-button {
+    margin-right: 5px;
 }
 
 .project-github-image {
