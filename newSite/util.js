@@ -1,5 +1,4 @@
 function clearProject(childDivs){
-    // var iframe = document.getElementById('iframe');
 
     var description = childDivs[0];
     var links = childDivs[1];
@@ -89,6 +88,9 @@ function clearSelection(){
         var projectTitle = elems[i].querySelector('.project-title');
         projectTitle.innerHTML = '';
 
+        var container = elems[i].querySelector('.project-demo');
+        container.style.display = 'none';
+
         var childDivs = elems[i].getElementsByClassName('text');
         clearProject(childDivs);
         elems[i].classList.remove('show');
@@ -107,10 +109,14 @@ function displayCheck(elem,data,onDisplay,type){
 
 function updateIframe(data){
     var iframe = document.getElementById('iframe');
+    var iframeContainer = document.querySelector('.iframe-container');
+
+    displayCheck(iframeContainer,'notNull',function(){},'block');
 
     displayCheck(iframe, data,
         function(){
             iframe.src = data
+            iframe.focus();
         }, 'block');
 }
 
@@ -134,7 +140,7 @@ function updatePlayButton(data, contentRow){
     displayCheck(containerClone, data,
         function(){
             containerClone.addEventListener('click',function(){
-                console.log(data);
+                updateIframe(data);
             })
         }, 'inline-block');
 }

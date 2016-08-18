@@ -9,6 +9,10 @@
 
 <body id="body">
 
+<div class="iframe-container"><iframe id="iframe" src=""></iframe> <div id="close-box">X</div></div>
+
+
+
 <div id="headerContainer">
 
 	<div class="name-plate">Kevin Nadro</div>
@@ -74,7 +78,7 @@
 
 
 	<div class="row _3">
-		<div class="box" id="project-astar"><div class="inside-box">A*</div></div>
+		<div class="box" id="project-cs445"><div class="inside-box">CS 445</div></div>
 		<div class="box" id="project-graph"><div class="inside-box">Graph</div></div>
 		<div class="box" id="project-maze" ><div class="inside-box">Maze</div></div>
 	</div>
@@ -135,7 +139,8 @@
 	<div class="row _6">
 		<div class="box" id="project-dither"><div class="inside-box">Dither</div></div>
 		<div class="box" id="project-receipt"><div class="inside-box">Receipt Parser</div></div>
-		<div class="box" id="project-cs445"><div class="inside-box">CS 445</div></div>
+		<div class="box" id="project-astar"><div class="inside-box">A*</div></div>
+
 	</div>
 
 	<div class="row content _6">
@@ -159,6 +164,7 @@
 
 </div>
 
+
 </body>
 
 <script>
@@ -179,6 +185,14 @@
 		}());
 
 	}
+
+	var closeBox = document.getElementById('close-box');
+	closeBox.addEventListener('click',function(){
+		var iframeContainer = document.querySelector('.iframe-container');
+		var iframe = document.getElementById('iframe');
+		iframe.src = '';
+		iframeContainer.style.display = 'none';
+	});
 
 </script>
 

@@ -127,7 +127,7 @@
 #close-box{
     position: absolute;
     top: 5%;
-    left: 95%;
+    left: 96%;
     cursor: pointer;
     color: white;
     width: 32px;
@@ -136,6 +136,17 @@
     text-align: center;
     vertical-align: middle;
     line-height: 32px;
+}
+
+#close-box:hover{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    -webkit-transition: background-color 350ms ease-in;
+    -moz-transition: background-color 350ms ease-in;
+    -o-transition: background-color 350ms ease-in;
+    -ms-transition: background-color 350ms ease-in;
+    transition: background-color 350ms ease-in;
 }
 
 #project-bleuetrouge {
@@ -223,11 +234,20 @@
 }
 
 #iframe {
-    width: 80%;
-    height: 55%;
-    left: 10%;
-    position: relative;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 100;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: none;
+    background-color: rgba(0,0,0,0.25);
+    z-index: 101;
 }
 
 #code {
@@ -311,6 +331,7 @@
     margin: 0 auto;
     position: relative;
     display: none;
+    top: 7px;
 }
 
 .project-demo {
@@ -318,6 +339,18 @@
     border: 1px solid black;
     width: 128px;
     margin: 0 auto;
+    margin-left: 10px;
+}
+
+.project-demo:hover {
+    background-color: black;
+    color: white;
+    -webkit-transition: background-color 350ms ease-in;
+    -moz-transition: background-color 350ms ease-in;
+    -o-transition: background-color 350ms ease-in;
+    -ms-transition: background-color 350ms ease-in;
+    transition: background-color 350ms ease-in;
+    cursor: pointer;
 }
 
 .play-button {
