@@ -30,30 +30,29 @@
 #github-image-container {
     position: absolute;
     display: block;
-    left: 78%;
+    left: 87%;
     top: 17px;
 }
 
-#github-image {
-    width: 48px;
-    height: 48px;
-}
 
 #linkedin-image-container {
     position: absolute;
     display: block;
-    left: 84%;
+    left: 90%;
     top: 17px;
 }
-
-#linkedin-image {
-
-}
-
 #contentContainer {
     width: 100%;
     height: 100%;
     overflow: scroll;
+}
+
+.fa-linkedin-square {
+    color: black;
+}
+
+.fa-github {
+    color: black;
 }
 
 .row {
