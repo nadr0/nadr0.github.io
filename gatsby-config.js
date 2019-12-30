@@ -17,8 +17,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Kevin Nadro`,
+        icon: `src/images/icon.png`,
+        short_name: `Kevin Nadro`,
+        description: `Kevin Nadro is a full stack developer working with latest web application technology.`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
