@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kevin Nadro`,
-    description: `Kevin Nadro is a full stack developer working with latest web application technology.`,
+    description: `Kevin Nadro is a full stack developer with a focus on Node.js, modern javascript, and web application development.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,7 +20,7 @@ module.exports = {
         name: `Kevin Nadro`,
         icon: `src/images/icon.png`,
         short_name: `Kevin Nadro`,
-        description: `Kevin Nadro is a full stack developer working with latest web application technology.`,
+        description: `Kevin Nadro is a full stack developer with a focus on Node.js, modern javascript, and web application development.`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
