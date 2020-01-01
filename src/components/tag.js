@@ -5,7 +5,7 @@ const Tag = ({text}) => {
       className="tag"
       style={{
         padding: `2.5px 5px`,
-        background: `#ffeaa7`,
+        background: `#b2bec3`,
         fontSize: `12px`,
         borderRadius: `5px`,
         textTransform: `uppercase`,

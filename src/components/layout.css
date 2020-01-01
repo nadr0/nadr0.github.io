@@ -627,6 +627,7 @@ pre tt:after {
 }
 .tags > .tag{
   margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 .postlinks > .postlink {

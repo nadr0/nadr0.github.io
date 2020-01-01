@@ -12,7 +12,8 @@ const Tags = ({tags}) => {
       display: `flex`,
       flexDirection: `row`,
       alignItems: `center`,
-      justifyContent: `flex-start`
+      justifyContent: `flex-start`,
+      flexWrap: `wrap`
     }}>
       {t}
     </div>
