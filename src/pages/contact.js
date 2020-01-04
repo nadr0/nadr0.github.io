@@ -13,6 +13,9 @@ const Contact = () => (
       <li>
         <a href="https://github.com/nadr0">Github</a>
       </li>
+      <li>
+        <a href="https://www.npmjs.com/~nadro">npm</a>
+      </li>
     </ul>
   </Layout>
 )
