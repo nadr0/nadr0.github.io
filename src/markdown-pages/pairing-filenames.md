@@ -69,7 +69,7 @@ __INSTAX__7oet_d9Z__img0008.tiff
 This method will allow you to easily store your scanned film on disk in pairs with minimal overhead.
 
 ### Code
-All the source code is open source and available on [github](insert link here).
+All the source code is open source and available on [github](https://github.com/nadr0/pairing-filenames).
 
 ### Related links
 Newton rings - [https://en.wikipedia.org/wiki/Newton's_rings](https://en.wikipedia.org/wiki/Newton%27s_rings)
