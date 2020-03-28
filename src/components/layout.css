@@ -633,3 +633,7 @@ pre tt:after {
 .postlinks > .postlink {
   margin-bottom: 12px;
 }
+
+.introduction-github-buttons > span:nth-child(n+2) {
+  margin-left: 4px;
+}
