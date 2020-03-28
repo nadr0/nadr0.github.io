@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from '../components/tags'
+import SelfSummary from "../components/selfsummary"
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -25,6 +27,7 @@ export default function Template({
         />
       </div>
     </div>
+    <SelfSummary/>
   </Layout>
   )
 }

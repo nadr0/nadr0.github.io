@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tags from "../components/tags"
+import GitHubButtons from "../components/githubbuttons"
 
 const AboutMe = () => {
   const wordVomit = ['Vue.js','Node.js','Vuex','Mocha','Chai','AWS','SASS',
@@ -17,11 +18,13 @@ const AboutMe = () => {
 
     <p>If I am not coding I am bouldering or sport climbing.</p>
 
-    <h3>Open source contributions</h3>
+    <h3>Open source contributions on GitHub</h3>
     <ul>
       <li><a href="https://github.com/BoostIO/Boostnote">Boostnote</a> - markdown note taker</li>
       <li><a href="https://github.com/algorithm-visualizer/algorithm-visualizer">algorithm-visualizer</a> - interactive algorithm visualizer for learning</li>
     </ul>
+
+    <p>Check me out on GitHub <GitHubButtons/> </p>
 
     <h3>Why did I create this blog?</h3>
     <p>I wanted to contribute to the open source community in addition to having a place to share my thoughts and work.</p>
