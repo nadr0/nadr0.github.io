@@ -18,7 +18,6 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Kevin Nadro`,
-        icon: `src/images/icon.png`,
         short_name: `Kevin Nadro`,
         description: `Kevin Nadro is a full stack developer with a focus on Node.js, modern javascript, and web application development.`,
         start_url: `/`,
@@ -45,6 +44,15 @@ module.exports = {
     resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            // It's important to specify the maxWidth (in pixels) of
+            // the content container as this plugin uses this as the
+            // base for generating different widths of each image.
+            maxWidth: 590,
+          },
+        },
         {
           resolve: `gatsby-remark-prismjs`,
           options: {
