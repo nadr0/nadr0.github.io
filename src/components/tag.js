@@ -5,10 +5,11 @@ const Tag = ({text}) => {
       className="tag"
       style={{
         padding: `2.5px 5px`,
-        background: `#b2bec3`,
+        background: `#f8f8f9`,
         fontSize: `12px`,
         borderRadius: `5px`,
         textTransform: `uppercase`,
+        color: `#70737a`,
         whiteSpace: `nowrap`
       }}
       >
