@@ -5,9 +5,6 @@ import Tags from "../components/tags"
 import GitHubButtons from "../components/githubbuttons"
 
 const AboutMe = () => {
-  const wordVomit = ['Vue.js','Node.js','Vuex','Mocha','Chai','AWS','SASS',
-  'Webpack4','ESLint','prettier','CI/CD','Component library','Express.js',
-  'MongoDB'];
   return (
   <Layout>
     <SEO title="About me" />
@@ -31,8 +28,6 @@ const AboutMe = () => {
 
     <h3>The content I will be creating.</h3>
     <p>I will be releasing articles about random code I write, projects that I am working on, tutorials with real world examples, and personal pieces on hobbies of mine.</p>
-    <p>Here is a word vomit of my full stack developer experience. You can expect to see content related to these.</p>
-    <Tags tags={wordVomit}/>
     <p></p>
 
     <h3>Inspiration</h3>
