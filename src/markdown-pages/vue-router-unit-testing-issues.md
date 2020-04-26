@@ -1,5 +1,5 @@
 ---
-path: "/blog/vue-router-unit-testing-issues"
+path: "/blog/there-are-code-smells-when-writing-vue-router-unit-tests-with-nodejs-and-jsdom"
 date: "2020-04-25"
 title: "There are code smells when writing vue router unit tests with Node.js and jsdom"
 categories:
