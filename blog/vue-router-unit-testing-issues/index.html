@@ -407,7 +407,7 @@ http<span class="token operator">:</span><span class="token operator">/</span><s
 <p>No you aren't! You are using 'abstract'.  You aren't using hash mode in your unit tests.
 Well if you look at the code if you aren't in a browser it will default to abstract. The documentation they provide is misleading.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> inBrowser <span class="token operator">=</span> <span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">;</span></code></pre></div>
-<p>Well shit, JSDOM creates a global window object in the mocha unit tests. That means it will be in <code class="language-text">hash</code> mode in our unit tests.</p>
+<p>JSDOM creates a global window object in the mocha unit tests. That means it will be in <code class="language-text">hash</code> mode in our unit tests.</p>
 <p>They are using the <code class="language-text">abstract</code> mode which is used Node.js environments. </p>
 <p>If I initialize all my VueRouter instances to use <code class="language-text">mode: abstract</code> my unit tests would pass but that is not the point!</p>
 <p>The <code class="language-text">vue-router</code> module says the browser is determined by the window object. JSDOM reimplements the DOM by creating a window object all while you are in Node.js.</p>
