@@ -527,7 +527,7 @@ Well if you look at the code if you aren't in a browser it will default to abstr
 var inBrowser = typeof window !== 'undefined';
 ```
 
-Well shit, JSDOM creates a global window object in the mocha unit tests. That means it will be in `hash` mode in our unit tests.
+JSDOM creates a global window object in the mocha unit tests. That means it will be in `hash` mode in our unit tests.
 
 They are using the `abstract` mode which is used Node.js environments. 
 
