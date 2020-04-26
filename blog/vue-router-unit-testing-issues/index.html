@@ -1,0 +1,463 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.b6df3aebaed1c64dd611.css">code[class*=language-],pre[class*=language-]{color:#9efeff;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;font-family:Operator Mono,Fira Code,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-weight:400;font-size:17px;line-height:25px;letter-spacing:.5px;text-shadow:0 1px #222245}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{color:inherit;background:#a599e9}pre[class*=language-]{padding:2em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#1e1e3f}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}.token{font-weight:400}.token.cdata,.token.comment,.token.prolog{color:#b362ff}.token.atrule,.token.delimiter,.token.important,.token.keyword,.token.selector{color:#ff9d00}.token.attr-name,.token.operator{color:#ffb454}.token.punctuation{color:#fff}.token.boolean{color:#ff628c}.token.builtin,.token.doctype,.token.tag,.token.tag .punctuation{color:#ff9d00}.token.entity,.token.symbol{color:#6897bb}.token.constant,.token.number,.token.property,.token.variable{color:#ff628c}.token.char,.token.string{color:#a5ff90}.token.attr-value,.token.attr-value .punctuation{color:#a5c261}.token.attr-value .punctuation:first-child{color:#a9b7c6}.token.url{color:#287bde;text-decoration:underline}.token.function{color:#fad000}.token.regex{background:#364135}.token.bold{font-weight:700}.token.italic{font-style:italic}.token.inserted{background:#0f0}.token.deleted{background:#ff000d}code.language-css .token.property,code.language-css .token.property+.token.punctuation{color:#a9b7c6}code.language-css .token.id,code.language-css .token.selector>.token.attribute,code.language-css .token.selector>.token.class,code.language-css .token.selector>.token.pseudo-class,code.language-css .token.selector>.token.pseudo-element{color:#ffc66d}.token.class-name{color:#fb94ff}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:none}pre .line-highlight,pre .line-highlight.line-highlight,pre>code.line-highlight{margin-top:36px;background:linear-gradient(90deg,rgba(179,98,255,.17),transparent)}pre .line-highlight:before,pre .line-highlight[data-end]:after,pre>code.line-highlight:before,pre>code.line-highlight[data-end]:after{content:""}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{color:#636e72;background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0;color:#2d3436}div>a:not(:last-child){padding-right:16px}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{background-color:#cce5ff;color:rgba(0,0,0,.8);border:2px solid #b8daff;border-radius:6px;font-weight:500;margin:1.5rem 0;padding:1.5rem;line-height:1.6;font-size:1rem}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.tags>.tag{margin-right:4px;margin-bottom:4px}.postlinks>.postlink{margin-bottom:12px}.postlinks>a{text-decoration:none}.introduction-github-buttons>span:nth-child(n+2){margin-left:4px}pre.language-terminal{position:relative;border:1px solid #d8d9da;border-radius:6px;padding:45px 1rem 1rem;margin:2rem 0;font-size:13px;background:#fff;color:#333}pre.language-terminal:before{content:"\2022   \2022   \2022";position:absolute;top:0;left:0;height:25px;background:linear-gradient(180deg,#f3f4f4 2%,#ebebeb 4%,#e4e4e4 98%,#bebebe 0);color:#ababab;width:100%;font-size:1.5rem;margin:0;line-height:0;padding:14px 0;text-indent:4px;letter-spacing:-10px}code[class*=language-terminal],pre[class*=language-terminal],pre code{color:#333;text-shadow:none}pre[class*=language-]{margin:2rem 0;box-shadow:3px 5px 20px rgba(0,0,0,.16)}</style><meta name="generator" content="Gatsby 2.20.8"/><title data-react-helmet="true">Articles | Kevin Nadro</title><meta data-react-helmet="true" name="description" content="Kevin Nadro is a full stack developer with a focus on Node.js, modern javascript, and web application development."/><meta data-react-helmet="true" property="og:title" content="Articles"/><meta data-react-helmet="true" property="og:description" content="Kevin Nadro is a full stack developer with a focus on Node.js, modern javascript, and web application development."/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-7f571af576367c60df4a.js"/><link as="script" rel="preload" href="/framework-727eca7a674e10b21a9f.js"/><link as="script" rel="preload" href="/app-925e4a153e986e591ac3.js"/><link as="script" rel="preload" href="/styles-85a04149be4e142495ba.js"/><link as="script" rel="preload" href="/commons-6332a23abc97a0d9ba20.js"/><link as="script" rel="preload" href="/68cad14e2e15242fdacbacffb3e38cd4b0ed50b5-beaf467871e6398e30e2.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-a0c70ef9886fd480acc7.js"/><link as="fetch" rel="preload" href="/page-data\blog\vue-router-unit-testing-issues\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data\app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header style="margin-bottom:1.45rem"><div style="margin:0 auto;max-width:960px;padding:1.45rem 1.0875rem;display:flex;flex-direction:row;align-items:center;justify-content:space-between"><div><a style="text-decoration:none" href="/">Kevin Nadro</a></div><div style="display:flex;align-items:center;flex-direction:row"><a style="text-decoration:none" href="/about-me/">About me</a><a style="text-decoration:none" href="/articles/">Articles</a><a style="text-decoration:none" href="/contact/">Contact</a></div></div></header><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0"><main><div class="blog-post-container"><div class="blog-post"><h1>There are code smells when writing vue router unit tests with Node.js and jsdom</h1><div class="tags" style="display:flex;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap"><div class="tag" style="padding:2.5px 5px;background:#f8f8f9;font-size:12px;border-radius:5px;text-transform:uppercase;color:#70737a;white-space:nowrap">javascript</div><div class="tag" style="padding:2.5px 5px;background:#f8f8f9;font-size:12px;border-radius:5px;text-transform:uppercase;color:#70737a;white-space:nowrap">unit test</div><div class="tag" style="padding:2.5px 5px;background:#f8f8f9;font-size:12px;border-radius:5px;text-transform:uppercase;color:#70737a;white-space:nowrap">npm package</div><div class="tag" style="padding:2.5px 5px;background:#f8f8f9;font-size:12px;border-radius:5px;text-transform:uppercase;color:#70737a;white-space:nowrap">vue-router</div></div><p></p><h2>April 25, 2020</h2><div class="blog-post-content"><p>I have been trying to write unit tests in a web application to test the functionality of a vue-router definition. I quickly realized that these are not actually unit tests and they have code smell.</p>
+<p>I believe the definition of a unit test should include the follow statements:</p>
+<ul>
+<li>Unit tests need to run independently</li>
+<li>Unit tests should be able to be reordered in any combination</li>
+</ul>
+<p>I think it would be bad practice to not follow these definitions.</p>
+<h1>Create vue application to test the code smell</h1>
+<p>We will create a vue application with vue cli because it has everything out of the box to test this code smell.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npm install @vue/cli</code></pre></div>
+<blockquote>
+<p>I don't recommend using global installs, that is global pollution.</p>
+</blockquote>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npx vue create unit-test-project
+$ cd unit-test-project
+$ vue add @vue/unit-mocha
+$ npm run test:unit</code></pre></div>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal"> WEBPACK  Compiling...
+
+  [===                      ] 10% (building)
+
+  [=========================] 98% (after emitting)
+
+ DONE  Compiled successfully in 1949ms
+
+  [=========================] 100% (completed)
+
+ WEBPACK  Compiled successfully in 1949ms
+
+ MOCHA  Testing...
+
+  HelloWorld.vue
+    √ renders props.msg when passed
+
+  1 passing (23ms)
+
+ MOCHA  Tests completed successfully</code></pre></div>
+<p>Great, everything is working. We have a foundation to write out unit tests.</p>
+<p>We need to install <a href="https://www.npmjs.com/package/vue-router">vue-router</a> package now.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npm install vue-router</code></pre></div>
+<p>The unit tests are located in <code class="language-text">tests/unit</code>. Here is the code for the unit test of the code smells.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> expect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'chai'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> shallowMount<span class="token punctuation">,</span> createLocalVue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/test-utils'</span>
+<span class="token keyword">import</span> HelloWorld <span class="token keyword">from</span> <span class="token string">'@/components/HelloWorld.vue'</span>
+<span class="token keyword">import</span> VueRouter <span class="token keyword">from</span> <span class="token string">"vue-router"</span>
+
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'root'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/home'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'home'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/options'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'options'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/profile'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'profile'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'Vue Router'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'initialize a vue router instance'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should default to root route name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span>
+      <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+      <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'root'</span>
+      <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'when navigating'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should be able to access home"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'home'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'home'</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should be able to access options from root path"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> currentRouteName <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token function">expect</span><span class="token punctuation">(</span>currentRouteName<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+        wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'options'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'options'</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<blockquote>
+<p>I delete the unit test file that is already there because we do not need it for this test.</p>
+</blockquote>
+<p>I created a routes array with the routes that I want to test inside a vue router. Say if we declare these routes in our web application and we want to make sure they are all accessible. We should be able to initialize our routes and be able to navigate to them within the vue router unit test. </p>
+<p>This is were the code starts to smell.</p>
+<p>We first write a unit test that we can access home. Great that unit test passes.</p>
+<p>Now let us write a <code class="language-text">should be able to access options from root path</code>. Maybe we have had a bug lately that someone on the root path cannot route to options. </p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npm run test:unit 
+  Vue Router
+    initialize a vue router instance
+      √ should default to root route name
+      when navigating
+        √ should be able to access home
+        1) should be able to access options from root path
+
+  2 passing (108ms)
+  1 failing
+
+  1) Vue Router
+       initialize a vue router instance
+         when navigating
+           should be able to access options from root path:
+
+      AssertionError: expected &#39;home&#39; to equal &#39;root&#39;
+      + expected - actual
+
+      -home
+      +root</code></pre></div>
+<p>Wait what? I have a unit test that passes saying that when the vue router initializes the current route is <code class="language-text">/</code> and the name is <code class="language-text">root</code>.</p>
+<p>This is why the code smells, we thought we were writing a unit test to test the functionality of the vue router. What we see is a unit test N+1 being effected by a unit test N. This goes against our definition of our unit test stated above.</p>
+<p>Try commenting out the unit test <code class="language-text">should be able to access home</code> and rerun it. It will work.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal"> DONE  Compiled successfully in 1723ms
+
+  [=========================] 100% (completed)
+
+ WEBPACK  Compiled successfully in 1723ms
+
+ MOCHA  Testing...
+
+  Vue Router
+    initialize a vue router instance
+      √ should default to root route name
+      when navigating
+        √ should be able to access options from root path
+
+  2 passing (36ms)
+
+ MOCHA  Tests completed successfully</code></pre></div>
+<p>Okay, well what am I supposed to do? Why is this happening? I created my own localVue, I created my own VueRouter instance. Why is the vue router being edited across unit tests?</p>
+<p>I check the vue test util documentation </p>
+<blockquote>
+<p>createLocalVue returns a Vue class for you to add components, mixins and install plugins without polluting the global Vue class.</p>
+</blockquote>
+<p>Okay great, just what I want!</p>
+<p>No way it could be my <code class="language-text">VueRouter</code> instance, it is a new object everytime! I'll prove it!</p>
+<p>I'll add a key to the objects to prove they are different and console log each object with that key</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">localVue<span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token string">"I'll prove it!"</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'localVue'</span><span class="token punctuation">,</span>localVue<span class="token punctuation">.</span>myVar<span class="token punctuation">)</span>
+localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>VueRouter<span class="token punctuation">)</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+router<span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token number">42</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Router'</span><span class="token punctuation">,</span>router<span class="token punctuation">.</span>myVar<span class="token punctuation">)</span>
+
+<span class="token comment">// I also console.log the router, and localVue in the next 2 unit tests</span></code></pre></div>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">  Vue Router
+    initialize a vue router instance
+localVue I&#39;ll prove it!
+Router 42
+      √ should default to root route name
+      when navigating
+localVue undefined
+Router undefined
+        √ should be able to access home
+localVue undefined
+Router undefined
+        1) should be able to access options from root path</code></pre></div>
+<p>Okay, what gives? <code class="language-text">localVue</code> and <code class="language-text">router</code> are always new instances. They aren't shared across the unit tests.</p>
+<p>Wait what is shared? <code class="language-text">VueRouter</code>, but wait! I created my own <code class="language-text">createLocalVue</code> and my own <code class="language-text">router</code> instance how is it possible the <code class="language-text">VueRouter</code> that I am using is shared across all of them. I literally write a line of code to initialize a new router object in the <code class="language-text">shallowMount</code>! </p>
+<p>What happens if I add some variables to the <code class="language-text">VueRouter</code> object that is imported at the top level.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> VueRouter <span class="token keyword">from</span> <span class="token string">"vue-router"</span>
+
+VueRouter<span class="token punctuation">.</span>myVar <span class="token operator">=</span> <span class="token string">"Why is this happening?"</span></code></pre></div>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">  Vue Router
+    initialize a vue router instance
+import VueRouter Why is this happening?
+localVue I&#39;ll prove it!
+Router 42
+      √ should default to root route name
+      when navigating
+import VueRouter Why is this happening?
+localVue undefined
+Router undefined
+        √ should be able to access home
+import VueRouter Why is this happening?
+localVue undefined
+Router undefined
+        1) should be able to access options from root path</code></pre></div>
+<p>Well duhh that should print, the scoping of <code class="language-text">VueRouter</code> import is at the top level of the file. What did you expect? Okay but what about the <code class="language-text">VueRouter</code> that is then <code class="language-text">used</code> inside my localVue.</p>
+<p>We can take a look at the documentation for <code class="language-text">Vue.use</code></p>
+<p><a href="https://vuejs.org/v2/api/#Vue-use">https://vuejs.org/v2/api/#Vue-use</a></p>
+<blockquote>
+<p>When this method is called on the same plugin multiple times, the plugin will be installed only once.</p>
+</blockquote>
+<p>Well I have 3 different Vue instances, I proved it! </p>
+<p>More documentation :</p>
+<p><a href="https://vuejs.org/v2/guide/plugins.html">https://vuejs.org/v2/guide/plugins.html</a></p>
+<blockquote>
+<p>Vue.use automatically prevents you from using the same plugin more than once, so calling it multiple times on the same plugin will install the plugin only once.</p>
+</blockquote>
+<p>Well how do I make the <code class="language-text">VueRouters</code> not talk to each other?</p>
+<p>After doing some some research,</p>
+<p><a href="https://stackoverflow.com/questions/37459565/es6-import-duplicates">https://stackoverflow.com/questions/37459565/es6-import-duplicates</a></p>
+<p><a href="https://tc39.es/ecma262/#sec-hostresolveimportedmodule">https://tc39.es/ecma262/#sec-hostresolveimportedmodule</a></p>
+<blockquote>
+<p>Each time this operation is called with a specific referencingScriptOrModule, specifier pair as arguments it must return the same Module Record instance if it completes normally.</p>
+</blockquote>
+<p>Can we somehow create a new instance and use that instead of using one import statement above?</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// index.js inside the folder createLocalVueRouter</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">createLocalVueRouter</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">delete</span> require<span class="token punctuation">.</span>cache<span class="token punctuation">[</span>require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+  <span class="token keyword">return</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default
+<span class="token punctuation">}</span></code></pre></div>
+<p>I know that you can delete the cache in node.js and re-require the module for it retrieves a new instance.</p>
+<p>Okay we should make some new unit tests now knowing we can have 3 seperate vue router import statements for the vue routers are dependent on each other.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> expect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'chai'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> shallowMount<span class="token punctuation">,</span> createLocalVue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@vue/test-utils'</span>
+<span class="token keyword">import</span> HelloWorld <span class="token keyword">from</span> <span class="token string">'@/components/HelloWorld.vue'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>createLocalVueRouter<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../../createLocalVueRouter"</span>
+
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'root'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/home'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'home'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/options'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'options'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token string">'/profile'</span><span class="token punctuation">,</span>
+    name<span class="token operator">:</span> <span class="token string">'profile'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'Vue Router'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'initialize a vue router instance'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+    <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">'should default to root route name'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> localVueRouter <span class="token operator">=</span> <span class="token function">createLocalVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>localVueRouter<span class="token punctuation">)</span>
+      <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">localVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+      <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'root'</span>
+      <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token function">describe</span><span class="token punctuation">(</span><span class="token string">'when navigating'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+      <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should be able to access home"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> localVueRouter <span class="token operator">=</span> <span class="token function">createLocalVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>localVueRouter<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">localVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'home'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'home'</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token function">it</span><span class="token punctuation">(</span><span class="token string">"should be able to access options from root path"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> localVueRouter <span class="token operator">=</span> <span class="token function">createLocalVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> localVue <span class="token operator">=</span> <span class="token function">createLocalVue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        localVue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>localVueRouter<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">localVueRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>routes<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> wrapper <span class="token operator">=</span> <span class="token function">shallowMount</span><span class="token punctuation">(</span>HelloWorld<span class="token punctuation">,</span> <span class="token punctuation">{</span> localVue<span class="token punctuation">,</span> router<span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> currentRouteName <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token function">expect</span><span class="token punctuation">(</span>currentRouteName<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+        wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'options'</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> actual <span class="token operator">=</span> wrapper<span class="token punctuation">.</span>vm<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>currentRoute<span class="token punctuation">.</span>name
+        <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token string">'options'</span>
+        <span class="token function">expect</span><span class="token punctuation">(</span>actual<span class="token punctuation">)</span><span class="token punctuation">.</span>to<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npm run test:unit
+ MOCHA  Testing...
+
+  Vue Router
+    initialize a vue router instance
+      √ should default to root route name
+      when navigating
+        √ should be able to access home
+        1) should be able to access options from root path
+
+  2 passing (107ms)
+  1 failing
+
+  1) Vue Router
+       initialize a vue router instance
+         when navigating
+           should be able to access options from root path:
+
+      AssertionError: expected &#39;home&#39; to equal &#39;root&#39;
+      + expected - actual
+
+      -home
+      +root</code></pre></div>
+<p>Why is this happening? </p>
+<p>vue-router actually uses global variables. You can't uncache and reload the component with module requires. Why would you think you can do that? The module still is accessing and using global variables. You can't reload the module.</p>
+<p>Look at the function <a href="https://github.com/vuejs/vue-router/blob/65de048ee9f0ebf899ae99c82b71ad397727e55d/src/history/hash.js#L109">getHash</a></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getHash</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// We can't use window.location.hash here because it's not</span>
+  <span class="token comment">// consistent across browsers - Firefox will pre-decode it!</span>
+  <span class="token keyword">var</span> href <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">;</span>
+  <span class="token keyword">var</span> index <span class="token operator">=</span> href<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'#'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// empty path</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token string">''</span> <span class="token punctuation">}</span>
+
+  href <span class="token operator">=</span> href<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// decode the hash but not the search or hash</span>
+  <span class="token comment">// as search(query) is already decoded</span>
+  <span class="token comment">// https://github.com/vuejs/vue-router/issues/2708</span>
+  <span class="token keyword">var</span> searchIndex <span class="token operator">=</span> href<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>searchIndex <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> hashIndex <span class="token operator">=</span> href<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'#'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>hashIndex <span class="token operator">></span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      href <span class="token operator">=</span> <span class="token function">decodeURI</span><span class="token punctuation">(</span>href<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> hashIndex<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> href<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>hashIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> href <span class="token operator">=</span> <span class="token function">decodeURI</span><span class="token punctuation">(</span>href<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    href <span class="token operator">=</span> <span class="token function">decodeURI</span><span class="token punctuation">(</span>href<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> searchIndex<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> href<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>searchIndex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> href
+<span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> href <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">;</span></code></pre></div>
+<p>Great, global variables.</p>
+<p>If you print the value of <code class="language-text">href</code> each time in our unit test above this is what you will see</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">  Vue Router
+    initialize a vue router instance
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token regex">/localhost/</span>
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>
+      √ should <span class="token keyword">default</span> to root route name
+      when navigating
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>home
+        √ should be able to access home
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>home
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>home
+http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">/</span>#<span class="token operator">/</span>home
+        <span class="token number">1</span><span class="token punctuation">)</span> should be able to access options <span class="token keyword">from</span> root path</code></pre></div>
+<p>You can see that the <code class="language-text">window.location.href</code> is being used across all the unit tests. <code class="language-text">window.location.href</code> isn't even <code class="language-text">vue-router</code> that is from JSDOM.</p>
+<p>We can update our <code class="language-text">createLocalVueRouter</code> function to account for this global variable.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">createLocalVueRouter</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">delete</span> require<span class="token punctuation">.</span>cache<span class="token punctuation">[</span>require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>location <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'/'</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default
+<span class="token punctuation">}</span></code></pre></div>
+<p>All the tests pass now.</p>
+<div class="gatsby-highlight" data-language="terminal"><pre class="language-terminal"><code class="language-terminal">$ npm run test:unit
+ MOCHA  Testing...
+
+  Vue Router
+    initialize a vue router instance
+      √ should default to root route name
+      when navigating
+        √ should be able to access home
+        √ should be able to access options from root path
+
+  3 passing (174ms)
+
+ MOCHA  Tests completed successfully</code></pre></div>
+<p>This is just a mess. We have a module that relies on global variables and the state isn't being restored in normal usage. You cannot easily write a unit test because of this global variable. The global variable actually comes from JSDOM.</p>
+<p><a href="https://www.npmjs.com/package/@vue/cli-plugin-unit-mocha">https://www.npmjs.com/package/@vue/cli-plugin-unit-mocha</a></p>
+<blockquote>
+<p>Note the tests are run inside Node.js with browser environment simulated with JSDOM.</p>
+</blockquote>
+<p>Now I thought to myself how is vue-router writing it's unit tests for vue-router if I ran into this issue? I checked out their repo myself and looked into the unit tests.</p>
+<p><a href="https://github.com/vuejs/vue-route">https://github.com/vuejs/vue-route</a></p>
+<p><a href="https://github.com/vuejs/vue-router/blob/65de048ee9f0ebf899ae99c82b71ad397727e55d/test/unit/specs/discrete-components.spec.js">https://github.com/vuejs/vue-router/blob/65de048ee9f0ebf899ae99c82b71ad397727e55d/test/unit/specs/discrete-components.spec.js</a></p>
+<p>I installed the repo and found this file <code class="language-text">discrete-components.spec.js</code>. You will see that they are testing a similar unit test to what I want to test and it passes. Why does theirs work but not mine?</p>
+<p>Oh what they don't tell you is they are actually unit testing their code without global variables.</p>
+<p><a href="https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations">https://router.vuejs.org/guide/essentials/history-mode.html#example-server-configurations</a></p>
+<blockquote>
+<p>The default mode for vue-router is hash mode - it uses the URL hash to simulate a full URL so that the page won't be reloaded when the URL changes.</p>
+</blockquote>
+<p><a href="https://github.com/vuejs/vue-router/blob/65de048ee9f0ebf899ae99c82b71ad397727e55d/src/index.js#L44">https://github.com/vuejs/vue-router/blob/65de048ee9f0ebf899ae99c82b71ad397727e55d/src/index.js#L44</a></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">    <span class="token keyword">let</span> mode <span class="token operator">=</span> options<span class="token punctuation">.</span>mode <span class="token operator">||</span> <span class="token string">'hash'</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>fallback <span class="token operator">=</span> mode <span class="token operator">===</span> <span class="token string">'history'</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>supportsPushState <span class="token operator">&amp;&amp;</span> options<span class="token punctuation">.</span>fallback <span class="token operator">!==</span> <span class="token boolean">false</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>fallback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      mode <span class="token operator">=</span> <span class="token string">'hash'</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>inBrowser<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      mode <span class="token operator">=</span> <span class="token string">'abstract'</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>mode <span class="token operator">=</span> mode</code></pre></div>
+<p>No you aren't! You are using 'abstract'.  You aren't using hash mode in your unit tests.
+Well if you look at the code if you aren't in a browser it will default to abstract. The documentation they provide is misleading.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> inBrowser <span class="token operator">=</span> <span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">'undefined'</span><span class="token punctuation">;</span></code></pre></div>
+<p>Well shit, JSDOM creates a global window object in the mocha unit tests. That means it will be in <code class="language-text">hash</code> mode in our unit tests.</p>
+<p>They are using the <code class="language-text">abstract</code> mode which is used Node.js environments. </p>
+<p>If I initialize all my VueRouter instances to use <code class="language-text">mode: abstract</code> my unit tests would pass but that is not the point!</p>
+<p>The <code class="language-text">vue-router</code> module says the browser is determined by the window object. JSDOM reimplements the DOM by creating a window object all while you are in Node.js.</p>
+<p>You are telling me that we are using Node.js but then using a browser environment so VueRouter goes to hash mode. So now the unit tests are dependant on one another because the entire environment is in browser mode. It won't default to abstract mode.</p>
+<p>This can be confusing, you are in Node.js but you are in a simulated browser at the same time. How can you effecetively write unit tests that don't effect one another? I wrote unit tests that import and create local variables that shouldn't be scoped into a function but it actually is because we are sharing a global variable that is <code class="language-text">window.location.href</code>. This is utterly annoying. I could have easily written <code class="language-text">abstract</code> within the initialization statement. I could have easily written <code class="language-text">window.location.href = &#39;&#39;</code> after each <code class="language-text">it</code> function to clear the history. I could have easily imported variables that are not scoped into another function to write my unit test but I can't. This library effects global storage and it doesn't really tell you.</p>
+<p>I say easily after spending a long time debugging why this problem occurs and what are potential solutions.</p>
+<p>You cannot simulate a new <code class="language-text">window.location.href</code> with a new <code class="language-text">VueRouter</code> object across the browser environment in each unit test with how they have implemented their library. It is really annoying. </p>
+<p>I don't want one VueRouter to effect another VueRouter clearly that is asking for too much.</p>
+<p>My current solution to this problem.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">createLocalVueRouter</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">delete</span> require<span class="token punctuation">.</span>cache<span class="token punctuation">[</span>require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>window <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>location <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <span class="token string">'/'</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-router'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default
+<span class="token punctuation">}</span></code></pre></div>
+<h1>JSDOM extra information</h1>
+<p>What really is happening is that within each unit test the JSDOM does not get cleared. VueRouter doesn't care or know about that it is just using whatever is in <code class="language-text">window.location</code>. What do either test runners or others have to say about clearing JSDOM between unit tests?</p>
+<h2>JSDOM does not clear after every unit test</h2>
+<p><a href="https://stackoverflow.com/questions/42805128/does-jest-reset-the-jsdom-document-after-every-suite-or-test">https://stackoverflow.com/questions/42805128/does-jest-reset-the-jsdom-document-after-every-suite-or-test</a></p>
+<blockquote>
+<p>No. Jest does not clean the JSDOM document after each test run! It only clears the DOM after all tests inside an entire file are completed.</p>
+</blockquote>
+<p>We are using mocha but the same idea applies.</p>
+<h2>Someone had the same idea as me but gets shut down</h2>
+<p><a href="https://github.com/facebook/jest/issues/1224">https://github.com/facebook/jest/issues/1224</a></p>
+<blockquote>
+<p>I suggest if you need this, to either:</p>
+<ul>
+<li>Write your own cleanup handler.</li>
+<li>Create a separate test file.</li>
+</ul>
+<p>Does this work for you? At this point I'm quite hesitant to adding new APIs to support jsdom better.</p>
+</blockquote>
+<h1>NPM package</h1>
+<p>I created an NPM package for this solution as well.</p>
+<p>It can be found <a href="https://www.npmjs.com/package/createlocalvuerouter">here</a></p></div></div></div><div><p>Check me out on GitHub <div class="introduction-github-buttons"><span><a href="https://github.com/nadr0" data-size="large" data-show-count="true" aria-label="Follow @nadr0 on GitHub">Follow @nadr0</a></span><span><a href="https://github.com/sponsors/nadr0" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @nadr0 on GitHub">Sponsor</a></span></div> </p></div></main><footer></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155164710-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/vue-router-unit-testing-issues";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-925e4a153e986e591ac3.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-a0c70ef9886fd480acc7.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7ef6b6be6d5225d8a32b.js"],"component---src-pages-about-me-js":["/component---src-pages-about-me-js-be7624aa5d7f0d9e6caf.js"],"component---src-pages-articles-js":["/component---src-pages-articles-js-2ad102a433e37f4f84fc.js"],"component---src-pages-contact-js":["/component---src-pages-contact-js-5fd0479b01cf47a1a135.js"],"component---src-pages-index-js":["/component---src-pages-index-js-7155f4ea6c6bf2f1c67c.js"]};/*]]>*/</script><script src="/component---src-templates-blog-template-js-a0c70ef9886fd480acc7.js" async=""></script><script src="/68cad14e2e15242fdacbacffb3e38cd4b0ed50b5-beaf467871e6398e30e2.js" async=""></script><script src="/commons-6332a23abc97a0d9ba20.js" async=""></script><script src="/styles-85a04149be4e142495ba.js" async=""></script><script src="/app-925e4a153e986e591ac3.js" async=""></script><script src="/framework-727eca7a674e10b21a9f.js" async=""></script><script src="/webpack-runtime-7f571af576367c60df4a.js" async=""></script></body></html>
