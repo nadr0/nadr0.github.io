@@ -439,14 +439,15 @@ fieldset {
   margin-bottom: 1.45rem;
 }
 blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  background-color: #cce5ff;
+  color: rgba(0,0,0,.8);
+  border: 2px solid #b8daff;
+  border-radius: 6px;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 form {
   margin-left: 0;
@@ -645,7 +646,6 @@ pre tt:after {
 pre.language-terminal {
   position: relative;
   padding: 1rem;
-  font-family: $code-font-family;
   border: 1px solid #d8d9da;
   border-radius: 6px;
   padding-top: 45px;
