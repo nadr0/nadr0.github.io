@@ -27,7 +27,6 @@ export default function Template({
         />
       </div>
     </div>
-    <SelfSummary/>
   </Layout>
   )
 }
