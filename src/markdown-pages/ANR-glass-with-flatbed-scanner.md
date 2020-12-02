@@ -26,7 +26,7 @@ EPSON Scan settings:
 - Unsharp mask off
 
 Silverfast 8 settings:
-- Photo Qualit 1 (300ppi) 300ppi
+- Photo Quality 1 (300ppi) 300ppi
 - Res. 3200ppi
 - Negafix Kodak Porta 400 NC
 - Unsharp Masking set to 0
