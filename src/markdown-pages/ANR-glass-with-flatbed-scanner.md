@@ -13,7 +13,7 @@ I picked up an anti newton ring (ANR) glass insert for my Epson v600 which fits 
 
 ## Setup
 
-I choose three photos. I scanned using EPSON Scan and Silverfast 8. I don't have VueScan. 
+I chose three photos. I scanned using EPSON Scan and Silverfast 8. I don't have VueScan. 
 
 EPSON Scan settings:
 - Professional Mode
