@@ -226,6 +226,8 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  object-fit:contain;
+  box-shadow: #f0f0f0 0px 0px 0px 400px inset !important;
 }
 h1 {
   margin-left: 0;
