@@ -686,3 +686,11 @@ pre[class*='language-'] {
   margin: 2rem 0;
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.16);
 }
+
+/* Quotes? */
+blockquote {
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.16);
+  margin-left: 2rem;
+  border-left: 10px solid #e5deae;
+}
+
