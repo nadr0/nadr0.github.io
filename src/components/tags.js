@@ -2,6 +2,8 @@ import React from "react"
 import Tag from './tag'
 
 const Tags = ({tags}) => {
+  return null
+
   const t = tags.map((tag, i)=>{
     return <Tag key={i} text={tag}/>
   })

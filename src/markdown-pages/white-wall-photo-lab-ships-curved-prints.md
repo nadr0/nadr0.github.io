@@ -2,11 +2,6 @@
 path: "/blog/white-wall-photo-lab-ships-curved-prints"
 date: "2023-04-19"
 title: "White Wall photo lab ships curved prints"
-categories:
-  - Photography
-tags:
-  - Film
-  - Prints
 ---
 
 I recently watched a video from Kyle McDougall that talked about preparing film photos for printing at a lab. He used White Wall photo lab in his video and I thought to give them a try since I have not used their service before.
