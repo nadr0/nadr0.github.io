@@ -38,12 +38,12 @@ const Header = ({ siteTitle }) => (
         flexDirection: `row`,
       }}>
         <Link
-          to="/about-me/"
+          to="/fine-art/"
           style={{
             textDecoration: `none`,
           }}
         >
-          About me
+          Fine Art
         </Link>
         <Link
           to="/articles/"
@@ -52,6 +52,14 @@ const Header = ({ siteTitle }) => (
           }}
         >
           Articles
+        </Link>
+        <Link
+          to="/about-me/"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          About me
         </Link>
         <Link
           to="/contact/"
