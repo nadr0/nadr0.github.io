@@ -9,7 +9,7 @@ const AboutMe = () => {
     <h1>Fine Art Photography</h1>
 
     <h3>CHICAGO WORKS: A Captivating Art Exhibition by <a href="https://j2gallery.com">Jackson Junge Gallery</a></h3>
-    <div style={{textAlign:'center', width: '600px', margin:'auto'}}>
+    <div style={{textAlign:'center'}}>
       <img style={{marginBottom:'0px'}} src="/bearing-the-elements.jpg"/>
       <div><i style={{fontSize: '15px'}}>Kevin Nadro, Bearing the elements, Photograph, 24X36 Framed & Matted</i></div>
     </div>
