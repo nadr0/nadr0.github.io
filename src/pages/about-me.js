@@ -9,7 +9,7 @@ const AboutMe = () => {
   <Layout>
     <SEO title="About me" />
     <h1>Hello, I'm Kevin Nadro.</h1>
-    <p>I'm a full stack developer working at a start-up called <a href="https://reconstructinc.com/">Reconstruct</a>. I write open source web and command line applications.</p>
+    <p>I write open source web and command line applications.</p>
 
     <p>I have been programming since 2012 and graduated from University of Illinois Urbana-Champaign with a BS in Computer Science. Currently based in Chicago, IL.</p>
 
