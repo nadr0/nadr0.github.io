@@ -37,13 +37,21 @@ const Header = ({ siteTitle }) => (
         alignItems: `center`,
         flexDirection: `row`,
       }}>
-        <Link
-          to="/fine-art/"
+          <Link
+          to="/selected-works/"
           style={{
             textDecoration: `none`,
           }}
         >
-          Fine Art
+          Selected Works
+        </Link>
+        <Link
+          to="/fine-art-cv/"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          CV
         </Link>
         <Link
           to="/articles/"

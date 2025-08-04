@@ -15,6 +15,8 @@ const AboutMe = () => {
 
     <p>If I am not coding I am bouldering or sport climbing.</p>
 
+    <p>I have been working at <a href="https://zoo.dev/">Zoo</a> on the Zoo Design Studio application.</p>
+
     <h3>Open source contributions on GitHub</h3>
     <ul>
       <li><a href="https://github.com/BoostIO/Boostnote">Boostnote</a> - markdown note taker</li>
