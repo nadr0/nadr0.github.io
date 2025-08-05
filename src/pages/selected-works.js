@@ -50,7 +50,7 @@ const SelectedWorks = () => {
     },
     {
       width: '600px',
-      src: '/Still-open.jpg',
+      src: '/Still-Open.jpg',
       title: 'Still Open',
       medium: MEDIUM_PHOTOGRAPH,
       size: '24 ½" x 18 ½"',
